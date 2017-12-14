@@ -72,6 +72,7 @@ Public Class frmEmployee
         Dim lineCount = File.ReadAllLines("Employees.txt").Length
         Dim EmployeeID As String
         EmployeeID = lineCount + 1
+        ClearAllTextBoxes()
         txtID.Text = EmployeeID
         txtDateRecorded.Text = Date.Today.ToString("dd-MM-yyyy")
         BtnSaveEmployee.Enabled = True
@@ -105,12 +106,9 @@ Public Class frmEmployee
             From txt In Me.Controls.OfType(Of TextBox)()
             Where txt.Text.Length = 0
             Select txt.Name
-
-        If ID = "" Then
-            MessageBox.Show("Please Click the New button before trying to enter information for a new employee")
-        ElseIf emptyTextBoxes.Any Then
-            MessageBox.Show(String.Format("Please fill following textboxes: {0}.", String.Join(", ", emptyTextBoxes)))
-            MessageBox.Show("If you do not have the information to fill in, use NA instead.")
+        If emptyTextBoxes.Any Then
+            MessageBox.Show(String.Format("Please fill following textboxes: {0}.", String.Join(", ", emptyTextBoxes)), "Missing Information")
+            MessageBox.Show("If you do not have the information to fill in, use NA instead.", "Missing Information")
         Else
             Dim sw As StreamWriter = IO.File.AppendText("Employees.txt")
             sw.WriteLine(Info)
@@ -122,8 +120,9 @@ Public Class frmEmployee
     End Sub
 
     Private Sub BtnUpdate_Click(sender As Object, e As EventArgs) Handles BtnUpdate.Click
-        Dim EmployeeID As String
+        Dim EmployeeID, Name As String
         EmployeeID = txtID.Text
+        Name = txtFirstName.Text & " " & txtLastName.Text
         Dim updated_data As String = ""
         For Each em In Employees
             If EmployeeID = em.ID Then
@@ -150,7 +149,7 @@ Public Class frmEmployee
             End With
         Next
         File.WriteAllText("Employees.txt", updated_data)
-        MessageBox.Show(EmployeeID & " Updated.", "Employee Updated")
+        MessageBox.Show(Name & " Updated.", "Employee Updated")
         ClearAllTextBoxes()
         txtFirstName.Focus()
     End Sub
@@ -166,7 +165,7 @@ Public Class frmEmployee
         dvgEmployee.Columns("ID").HeaderText = "Employee ID"
         dvgEmployee.Columns("FirstName").HeaderText = "First Name"
         dvgEmployee.Columns("LastName").HeaderText = "Last Name"
-        dvgEmployee.Columns("Middle").HeaderText = "Middle Initial"
+        dvgEmployee.Columns("MiddleInitial").HeaderText = "Middle Initial"
         dvgEmployee.Columns("Address").HeaderText = "Address"
         dvgEmployee.Columns("AptRoom").HeaderText = "Apt / Room #"
         dvgEmployee.Columns("City").HeaderText = "City"
