@@ -199,7 +199,7 @@ Partial Class frmEmployee
         '
         'txtID
         '
-        Me.txtID.Location = New System.Drawing.Point(37, 39)
+        Me.txtID.Location = New System.Drawing.Point(39, 39)
         Me.txtID.Name = "txtID"
         Me.txtID.ReadOnly = True
         Me.txtID.Size = New System.Drawing.Size(75, 20)
@@ -209,7 +209,7 @@ Partial Class frmEmployee
         'lblID
         '
         Me.lblID.AutoSize = True
-        Me.lblID.Location = New System.Drawing.Point(10, 42)
+        Me.lblID.Location = New System.Drawing.Point(12, 42)
         Me.lblID.Name = "lblID"
         Me.lblID.Size = New System.Drawing.Size(21, 13)
         Me.lblID.TabIndex = 1
