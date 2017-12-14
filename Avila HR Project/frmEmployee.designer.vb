@@ -87,7 +87,7 @@ Partial Class frmEmployee
         Me.txtFirstName.Location = New System.Drawing.Point(132, 108)
         Me.txtFirstName.Name = "txtFirstName"
         Me.txtFirstName.Size = New System.Drawing.Size(161, 20)
-        Me.txtFirstName.TabIndex = 0
+        Me.txtFirstName.TabIndex = 1
         '
         'lblFirstName
         '
@@ -495,35 +495,35 @@ Partial Class frmEmployee
         Me.txtBirthday.Location = New System.Drawing.Point(132, 315)
         Me.txtBirthday.Name = "txtBirthday"
         Me.txtBirthday.Size = New System.Drawing.Size(161, 20)
-        Me.txtBirthday.TabIndex = 6
+        Me.txtBirthday.TabIndex = 13
         '
         'txtMainPhone
         '
         Me.txtMainPhone.Location = New System.Drawing.Point(132, 213)
         Me.txtMainPhone.Name = "txtMainPhone"
         Me.txtMainPhone.Size = New System.Drawing.Size(161, 20)
-        Me.txtMainPhone.TabIndex = 6
+        Me.txtMainPhone.TabIndex = 9
         '
         'txtAltPhone
         '
         Me.txtAltPhone.Location = New System.Drawing.Point(368, 213)
         Me.txtAltPhone.Name = "txtAltPhone"
         Me.txtAltPhone.Size = New System.Drawing.Size(407, 20)
-        Me.txtAltPhone.TabIndex = 6
+        Me.txtAltPhone.TabIndex = 10
         '
         'txtZipCode
         '
         Me.txtZipCode.Location = New System.Drawing.Point(614, 176)
         Me.txtZipCode.Name = "txtZipCode"
         Me.txtZipCode.Size = New System.Drawing.Size(161, 20)
-        Me.txtZipCode.TabIndex = 5
+        Me.txtZipCode.TabIndex = 8
         '
         'txtState
         '
         Me.txtState.Location = New System.Drawing.Point(368, 176)
         Me.txtState.Name = "txtState"
         Me.txtState.Size = New System.Drawing.Size(161, 20)
-        Me.txtState.TabIndex = 5
+        Me.txtState.TabIndex = 7
         '
         'frmEmployee
         '

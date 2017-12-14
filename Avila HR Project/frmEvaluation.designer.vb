@@ -191,9 +191,10 @@ Partial Class frmEvaluation
         'lblInformation
         '
         Me.lblInformation.AutoSize = True
-        Me.lblInformation.Location = New System.Drawing.Point(12, 105)
+        Me.lblInformation.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInformation.Location = New System.Drawing.Point(13, 97)
         Me.lblInformation.Name = "lblInformation"
-        Me.lblInformation.Size = New System.Drawing.Size(117, 13)
+        Me.lblInformation.Size = New System.Drawing.Size(241, 26)
         Me.lblInformation.TabIndex = 104
         Me.lblInformation.Text = "Candidate's Information"
         '
