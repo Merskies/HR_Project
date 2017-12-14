@@ -42,61 +42,61 @@ Partial Class frmEvaluation
         Me.txtDepartment = New System.Windows.Forms.TextBox()
         Me.txtInterviewer = New System.Windows.Forms.TextBox()
         Me.lblInformation = New System.Windows.Forms.Label()
-        Me.gboxVisionLeadership = New System.Windows.Forms.GroupBox()
-        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.lblVisionLeadership = New System.Windows.Forms.Label()
+        Me.gbox1 = New System.Windows.Forms.GroupBox()
+        Me.RB1_U = New System.Windows.Forms.RadioButton()
+        Me.RB1_5 = New System.Windows.Forms.RadioButton()
+        Me.RB1_4 = New System.Windows.Forms.RadioButton()
+        Me.RB1_3 = New System.Windows.Forms.RadioButton()
+        Me.RB1_2 = New System.Windows.Forms.RadioButton()
+        Me.RB1_1 = New System.Windows.Forms.RadioButton()
+        Me.lblVision = New System.Windows.Forms.Label()
         Me.gboxRatingScale = New System.Windows.Forms.GroupBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lbl1 = New System.Windows.Forms.Label()
+        Me.lbl2 = New System.Windows.Forms.Label()
+        Me.lbl3 = New System.Windows.Forms.Label()
+        Me.lbl4 = New System.Windows.Forms.Label()
+        Me.lbl5 = New System.Windows.Forms.Label()
+        Me.lblU = New System.Windows.Forms.Label()
         Me.lblRatingScale = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton7 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton8 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton9 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton10 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton11 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton12 = New System.Windows.Forms.RadioButton()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton13 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton14 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton15 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton16 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton17 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton18 = New System.Windows.Forms.RadioButton()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton19 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton20 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton21 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton22 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton23 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton24 = New System.Windows.Forms.RadioButton()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton25 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton26 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton27 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton28 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton29 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton30 = New System.Windows.Forms.RadioButton()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.gbox2 = New System.Windows.Forms.GroupBox()
+        Me.RB2_U = New System.Windows.Forms.RadioButton()
+        Me.RB2_5 = New System.Windows.Forms.RadioButton()
+        Me.RB2_4 = New System.Windows.Forms.RadioButton()
+        Me.RB2_3 = New System.Windows.Forms.RadioButton()
+        Me.RB2_2 = New System.Windows.Forms.RadioButton()
+        Me.RB2_1 = New System.Windows.Forms.RadioButton()
+        Me.lblJudgment = New System.Windows.Forms.Label()
+        Me.gbox3 = New System.Windows.Forms.GroupBox()
+        Me.RB3_U = New System.Windows.Forms.RadioButton()
+        Me.RB3_5 = New System.Windows.Forms.RadioButton()
+        Me.RB3_4 = New System.Windows.Forms.RadioButton()
+        Me.RB3_3 = New System.Windows.Forms.RadioButton()
+        Me.RB3_2 = New System.Windows.Forms.RadioButton()
+        Me.RB3_1 = New System.Windows.Forms.RadioButton()
+        Me.lblInterpersonal = New System.Windows.Forms.Label()
+        Me.gbox4 = New System.Windows.Forms.GroupBox()
+        Me.RB4_U = New System.Windows.Forms.RadioButton()
+        Me.RB4_5 = New System.Windows.Forms.RadioButton()
+        Me.RB4_4 = New System.Windows.Forms.RadioButton()
+        Me.RB4_3 = New System.Windows.Forms.RadioButton()
+        Me.RB4_2 = New System.Windows.Forms.RadioButton()
+        Me.RB4_1 = New System.Windows.Forms.RadioButton()
+        Me.lblKnowledge = New System.Windows.Forms.Label()
+        Me.gbox5 = New System.Windows.Forms.GroupBox()
+        Me.RB5_U = New System.Windows.Forms.RadioButton()
+        Me.RB5_5 = New System.Windows.Forms.RadioButton()
+        Me.RB5_4 = New System.Windows.Forms.RadioButton()
+        Me.RB5_3 = New System.Windows.Forms.RadioButton()
+        Me.RB5_2 = New System.Windows.Forms.RadioButton()
+        Me.RB5_1 = New System.Windows.Forms.RadioButton()
+        Me.lblCommunications = New System.Windows.Forms.Label()
         Me.MenuStrip.SuspendLayout()
-        Me.gboxVisionLeadership.SuspendLayout()
+        Me.gbox1.SuspendLayout()
         Me.gboxRatingScale.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
+        Me.gbox2.SuspendLayout()
+        Me.gbox3.SuspendLayout()
+        Me.gbox4.SuspendLayout()
+        Me.gbox5.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip
@@ -252,105 +252,105 @@ Partial Class frmEvaluation
         Me.lblInformation.TabIndex = 104
         Me.lblInformation.Text = "Candidate's Information"
         '
-        'gboxVisionLeadership
+        'gbox1
         '
-        Me.gboxVisionLeadership.Controls.Add(Me.RadioButton6)
-        Me.gboxVisionLeadership.Controls.Add(Me.RadioButton5)
-        Me.gboxVisionLeadership.Controls.Add(Me.RadioButton4)
-        Me.gboxVisionLeadership.Controls.Add(Me.RadioButton3)
-        Me.gboxVisionLeadership.Controls.Add(Me.RadioButton2)
-        Me.gboxVisionLeadership.Controls.Add(Me.RadioButton1)
-        Me.gboxVisionLeadership.Controls.Add(Me.lblVisionLeadership)
-        Me.gboxVisionLeadership.Location = New System.Drawing.Point(15, 258)
-        Me.gboxVisionLeadership.Name = "gboxVisionLeadership"
-        Me.gboxVisionLeadership.Size = New System.Drawing.Size(721, 46)
-        Me.gboxVisionLeadership.TabIndex = 106
-        Me.gboxVisionLeadership.TabStop = False
+        Me.gbox1.Controls.Add(Me.RB1_U)
+        Me.gbox1.Controls.Add(Me.RB1_5)
+        Me.gbox1.Controls.Add(Me.RB1_4)
+        Me.gbox1.Controls.Add(Me.RB1_3)
+        Me.gbox1.Controls.Add(Me.RB1_2)
+        Me.gbox1.Controls.Add(Me.RB1_1)
+        Me.gbox1.Controls.Add(Me.lblVision)
+        Me.gbox1.Location = New System.Drawing.Point(15, 258)
+        Me.gbox1.Name = "gbox1"
+        Me.gbox1.Size = New System.Drawing.Size(721, 46)
+        Me.gbox1.TabIndex = 106
+        Me.gbox1.TabStop = False
         '
-        'RadioButton6
+        'RB1_U
         '
-        Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.Location = New System.Drawing.Point(621, 16)
-        Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(33, 17)
-        Me.RadioButton6.TabIndex = 3
-        Me.RadioButton6.TabStop = True
-        Me.RadioButton6.Text = "U"
-        Me.RadioButton6.UseVisualStyleBackColor = True
+        Me.RB1_U.AutoSize = True
+        Me.RB1_U.Location = New System.Drawing.Point(621, 16)
+        Me.RB1_U.Name = "RB1_U"
+        Me.RB1_U.Size = New System.Drawing.Size(33, 17)
+        Me.RB1_U.TabIndex = 3
+        Me.RB1_U.TabStop = True
+        Me.RB1_U.Text = "U"
+        Me.RB1_U.UseVisualStyleBackColor = True
         '
-        'RadioButton5
+        'RB1_5
         '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Location = New System.Drawing.Point(539, 16)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton5.TabIndex = 3
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "5"
-        Me.RadioButton5.UseVisualStyleBackColor = True
+        Me.RB1_5.AutoSize = True
+        Me.RB1_5.Location = New System.Drawing.Point(539, 16)
+        Me.RB1_5.Name = "RB1_5"
+        Me.RB1_5.Size = New System.Drawing.Size(31, 17)
+        Me.RB1_5.TabIndex = 3
+        Me.RB1_5.TabStop = True
+        Me.RB1_5.Text = "5"
+        Me.RB1_5.UseVisualStyleBackColor = True
         '
-        'RadioButton4
+        'RB1_4
         '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(457, 16)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton4.TabIndex = 3
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "4"
-        Me.RadioButton4.UseVisualStyleBackColor = True
+        Me.RB1_4.AutoSize = True
+        Me.RB1_4.Location = New System.Drawing.Point(457, 16)
+        Me.RB1_4.Name = "RB1_4"
+        Me.RB1_4.Size = New System.Drawing.Size(31, 17)
+        Me.RB1_4.TabIndex = 3
+        Me.RB1_4.TabStop = True
+        Me.RB1_4.Text = "4"
+        Me.RB1_4.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'RB1_3
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(375, 16)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton3.TabIndex = 3
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "3"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.RB1_3.AutoSize = True
+        Me.RB1_3.Location = New System.Drawing.Point(375, 16)
+        Me.RB1_3.Name = "RB1_3"
+        Me.RB1_3.Size = New System.Drawing.Size(31, 17)
+        Me.RB1_3.TabIndex = 3
+        Me.RB1_3.TabStop = True
+        Me.RB1_3.Text = "3"
+        Me.RB1_3.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'RB1_2
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(293, 16)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton2.TabIndex = 2
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "2"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.RB1_2.AutoSize = True
+        Me.RB1_2.Location = New System.Drawing.Point(293, 16)
+        Me.RB1_2.Name = "RB1_2"
+        Me.RB1_2.Size = New System.Drawing.Size(31, 17)
+        Me.RB1_2.TabIndex = 2
+        Me.RB1_2.TabStop = True
+        Me.RB1_2.Text = "2"
+        Me.RB1_2.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'RB1_1
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(211, 16)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton1.TabIndex = 1
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "1"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.RB1_1.AutoSize = True
+        Me.RB1_1.Location = New System.Drawing.Point(211, 16)
+        Me.RB1_1.Name = "RB1_1"
+        Me.RB1_1.Size = New System.Drawing.Size(31, 17)
+        Me.RB1_1.TabIndex = 1
+        Me.RB1_1.TabStop = True
+        Me.RB1_1.Text = "1"
+        Me.RB1_1.UseVisualStyleBackColor = True
         '
-        'lblVisionLeadership
+        'lblVision
         '
-        Me.lblVisionLeadership.AutoSize = True
-        Me.lblVisionLeadership.Location = New System.Drawing.Point(3, 17)
-        Me.lblVisionLeadership.Name = "lblVisionLeadership"
-        Me.lblVisionLeadership.Size = New System.Drawing.Size(136, 13)
-        Me.lblVisionLeadership.TabIndex = 0
-        Me.lblVisionLeadership.Text = "Vision and Leadership skills"
+        Me.lblVision.AutoSize = True
+        Me.lblVision.Location = New System.Drawing.Point(3, 17)
+        Me.lblVision.Name = "lblVision"
+        Me.lblVision.Size = New System.Drawing.Size(136, 13)
+        Me.lblVision.TabIndex = 0
+        Me.lblVision.Text = "Vision and Leadership skills"
         '
         'gboxRatingScale
         '
         Me.gboxRatingScale.BackColor = System.Drawing.Color.LightBlue
-        Me.gboxRatingScale.Controls.Add(Me.Label2)
-        Me.gboxRatingScale.Controls.Add(Me.Label6)
-        Me.gboxRatingScale.Controls.Add(Me.Label5)
-        Me.gboxRatingScale.Controls.Add(Me.Label4)
-        Me.gboxRatingScale.Controls.Add(Me.Label3)
-        Me.gboxRatingScale.Controls.Add(Me.Label1)
+        Me.gboxRatingScale.Controls.Add(Me.lbl1)
+        Me.gboxRatingScale.Controls.Add(Me.lbl2)
+        Me.gboxRatingScale.Controls.Add(Me.lbl3)
+        Me.gboxRatingScale.Controls.Add(Me.lbl4)
+        Me.gboxRatingScale.Controls.Add(Me.lbl5)
+        Me.gboxRatingScale.Controls.Add(Me.lblU)
         Me.gboxRatingScale.Controls.Add(Me.lblRatingScale)
         Me.gboxRatingScale.Location = New System.Drawing.Point(450, 97)
         Me.gboxRatingScale.Name = "gboxRatingScale"
@@ -358,59 +358,59 @@ Partial Class frmEvaluation
         Me.gboxRatingScale.TabIndex = 1
         Me.gboxRatingScale.TabStop = False
         '
-        'Label2
+        'lbl1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(11, 139)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(47, 13)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "1 = Poor"
+        Me.lbl1.AutoSize = True
+        Me.lbl1.Location = New System.Drawing.Point(11, 139)
+        Me.lbl1.Name = "lbl1"
+        Me.lbl1.Size = New System.Drawing.Size(47, 13)
+        Me.lbl1.TabIndex = 5
+        Me.lbl1.Text = "1 = Poor"
         '
-        'Label6
+        'lbl2
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(11, 118)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(127, 13)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "2 = Less than acceptable"
+        Me.lbl2.AutoSize = True
+        Me.lbl2.Location = New System.Drawing.Point(11, 118)
+        Me.lbl2.Name = "lbl2"
+        Me.lbl2.Size = New System.Drawing.Size(127, 13)
+        Me.lbl2.TabIndex = 5
+        Me.lbl2.Text = "2 = Less than acceptable"
         '
-        'Label5
+        'lbl3
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(11, 97)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(79, 13)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "3 = Acceptable"
+        Me.lbl3.AutoSize = True
+        Me.lbl3.Location = New System.Drawing.Point(11, 97)
+        Me.lbl3.Name = "lbl3"
+        Me.lbl3.Size = New System.Drawing.Size(79, 13)
+        Me.lbl3.TabIndex = 4
+        Me.lbl3.Text = "3 = Acceptable"
         '
-        'Label4
+        'lbl4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(11, 76)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(129, 13)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "4 = More than acceptable"
+        Me.lbl4.AutoSize = True
+        Me.lbl4.Location = New System.Drawing.Point(11, 76)
+        Me.lbl4.Name = "lbl4"
+        Me.lbl4.Size = New System.Drawing.Size(129, 13)
+        Me.lbl4.TabIndex = 3
+        Me.lbl4.Text = "4 = More than acceptable"
         '
-        'Label3
+        'lbl5
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(11, 55)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(68, 13)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "5 = Excellent"
+        Me.lbl5.AutoSize = True
+        Me.lbl5.Location = New System.Drawing.Point(11, 55)
+        Me.lbl5.Name = "lbl5"
+        Me.lbl5.Size = New System.Drawing.Size(68, 13)
+        Me.lbl5.TabIndex = 2
+        Me.lbl5.Text = "5 = Excellent"
         '
-        'Label1
+        'lblU
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(11, 34)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(118, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "U = Unable to Evaluate"
+        Me.lblU.AutoSize = True
+        Me.lblU.Location = New System.Drawing.Point(11, 34)
+        Me.lblU.Name = "lblU"
+        Me.lblU.Size = New System.Drawing.Size(118, 13)
+        Me.lblU.TabIndex = 1
+        Me.lblU.Text = "U = Unable to Evaluate"
         '
         'lblRatingScale
         '
@@ -422,365 +422,365 @@ Partial Class frmEvaluation
         Me.lblRatingScale.TabIndex = 0
         Me.lblRatingScale.Text = "Rating Scale"
         '
-        'GroupBox1
+        'gbox2
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton7)
-        Me.GroupBox1.Controls.Add(Me.RadioButton8)
-        Me.GroupBox1.Controls.Add(Me.RadioButton9)
-        Me.GroupBox1.Controls.Add(Me.RadioButton10)
-        Me.GroupBox1.Controls.Add(Me.RadioButton11)
-        Me.GroupBox1.Controls.Add(Me.RadioButton12)
-        Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Location = New System.Drawing.Point(15, 310)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(721, 46)
-        Me.GroupBox1.TabIndex = 106
-        Me.GroupBox1.TabStop = False
+        Me.gbox2.Controls.Add(Me.RB2_U)
+        Me.gbox2.Controls.Add(Me.RB2_5)
+        Me.gbox2.Controls.Add(Me.RB2_4)
+        Me.gbox2.Controls.Add(Me.RB2_3)
+        Me.gbox2.Controls.Add(Me.RB2_2)
+        Me.gbox2.Controls.Add(Me.RB2_1)
+        Me.gbox2.Controls.Add(Me.lblJudgment)
+        Me.gbox2.Location = New System.Drawing.Point(15, 310)
+        Me.gbox2.Name = "gbox2"
+        Me.gbox2.Size = New System.Drawing.Size(721, 46)
+        Me.gbox2.TabIndex = 106
+        Me.gbox2.TabStop = False
         '
-        'RadioButton7
+        'RB2_U
         '
-        Me.RadioButton7.AutoSize = True
-        Me.RadioButton7.Location = New System.Drawing.Point(621, 16)
-        Me.RadioButton7.Name = "RadioButton7"
-        Me.RadioButton7.Size = New System.Drawing.Size(33, 17)
-        Me.RadioButton7.TabIndex = 3
-        Me.RadioButton7.TabStop = True
-        Me.RadioButton7.Text = "U"
-        Me.RadioButton7.UseVisualStyleBackColor = True
+        Me.RB2_U.AutoSize = True
+        Me.RB2_U.Location = New System.Drawing.Point(621, 16)
+        Me.RB2_U.Name = "RB2_U"
+        Me.RB2_U.Size = New System.Drawing.Size(33, 17)
+        Me.RB2_U.TabIndex = 3
+        Me.RB2_U.TabStop = True
+        Me.RB2_U.Text = "U"
+        Me.RB2_U.UseVisualStyleBackColor = True
         '
-        'RadioButton8
+        'RB2_5
         '
-        Me.RadioButton8.AutoSize = True
-        Me.RadioButton8.Location = New System.Drawing.Point(539, 16)
-        Me.RadioButton8.Name = "RadioButton8"
-        Me.RadioButton8.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton8.TabIndex = 3
-        Me.RadioButton8.TabStop = True
-        Me.RadioButton8.Text = "5"
-        Me.RadioButton8.UseVisualStyleBackColor = True
+        Me.RB2_5.AutoSize = True
+        Me.RB2_5.Location = New System.Drawing.Point(539, 16)
+        Me.RB2_5.Name = "RB2_5"
+        Me.RB2_5.Size = New System.Drawing.Size(31, 17)
+        Me.RB2_5.TabIndex = 3
+        Me.RB2_5.TabStop = True
+        Me.RB2_5.Text = "5"
+        Me.RB2_5.UseVisualStyleBackColor = True
         '
-        'RadioButton9
+        'RB2_4
         '
-        Me.RadioButton9.AutoSize = True
-        Me.RadioButton9.Location = New System.Drawing.Point(457, 16)
-        Me.RadioButton9.Name = "RadioButton9"
-        Me.RadioButton9.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton9.TabIndex = 3
-        Me.RadioButton9.TabStop = True
-        Me.RadioButton9.Text = "4"
-        Me.RadioButton9.UseVisualStyleBackColor = True
+        Me.RB2_4.AutoSize = True
+        Me.RB2_4.Location = New System.Drawing.Point(457, 16)
+        Me.RB2_4.Name = "RB2_4"
+        Me.RB2_4.Size = New System.Drawing.Size(31, 17)
+        Me.RB2_4.TabIndex = 3
+        Me.RB2_4.TabStop = True
+        Me.RB2_4.Text = "4"
+        Me.RB2_4.UseVisualStyleBackColor = True
         '
-        'RadioButton10
+        'RB2_3
         '
-        Me.RadioButton10.AutoSize = True
-        Me.RadioButton10.Location = New System.Drawing.Point(375, 16)
-        Me.RadioButton10.Name = "RadioButton10"
-        Me.RadioButton10.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton10.TabIndex = 3
-        Me.RadioButton10.TabStop = True
-        Me.RadioButton10.Text = "3"
-        Me.RadioButton10.UseVisualStyleBackColor = True
+        Me.RB2_3.AutoSize = True
+        Me.RB2_3.Location = New System.Drawing.Point(375, 16)
+        Me.RB2_3.Name = "RB2_3"
+        Me.RB2_3.Size = New System.Drawing.Size(31, 17)
+        Me.RB2_3.TabIndex = 3
+        Me.RB2_3.TabStop = True
+        Me.RB2_3.Text = "3"
+        Me.RB2_3.UseVisualStyleBackColor = True
         '
-        'RadioButton11
+        'RB2_2
         '
-        Me.RadioButton11.AutoSize = True
-        Me.RadioButton11.Location = New System.Drawing.Point(293, 16)
-        Me.RadioButton11.Name = "RadioButton11"
-        Me.RadioButton11.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton11.TabIndex = 2
-        Me.RadioButton11.TabStop = True
-        Me.RadioButton11.Text = "2"
-        Me.RadioButton11.UseVisualStyleBackColor = True
+        Me.RB2_2.AutoSize = True
+        Me.RB2_2.Location = New System.Drawing.Point(293, 16)
+        Me.RB2_2.Name = "RB2_2"
+        Me.RB2_2.Size = New System.Drawing.Size(31, 17)
+        Me.RB2_2.TabIndex = 2
+        Me.RB2_2.TabStop = True
+        Me.RB2_2.Text = "2"
+        Me.RB2_2.UseVisualStyleBackColor = True
         '
-        'RadioButton12
+        'RB2_1
         '
-        Me.RadioButton12.AutoSize = True
-        Me.RadioButton12.Location = New System.Drawing.Point(211, 16)
-        Me.RadioButton12.Name = "RadioButton12"
-        Me.RadioButton12.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton12.TabIndex = 1
-        Me.RadioButton12.TabStop = True
-        Me.RadioButton12.Text = "1"
-        Me.RadioButton12.UseVisualStyleBackColor = True
+        Me.RB2_1.AutoSize = True
+        Me.RB2_1.Location = New System.Drawing.Point(211, 16)
+        Me.RB2_1.Name = "RB2_1"
+        Me.RB2_1.Size = New System.Drawing.Size(31, 17)
+        Me.RB2_1.TabIndex = 1
+        Me.RB2_1.TabStop = True
+        Me.RB2_1.Text = "1"
+        Me.RB2_1.UseVisualStyleBackColor = True
         '
-        'Label7
+        'lblJudgment
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(3, 17)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(183, 13)
-        Me.Label7.TabIndex = 0
-        Me.Label7.Text = "Judgment and Decision Making Skills"
+        Me.lblJudgment.AutoSize = True
+        Me.lblJudgment.Location = New System.Drawing.Point(3, 17)
+        Me.lblJudgment.Name = "lblJudgment"
+        Me.lblJudgment.Size = New System.Drawing.Size(183, 13)
+        Me.lblJudgment.TabIndex = 0
+        Me.lblJudgment.Text = "Judgment and Decision Making Skills"
         '
-        'GroupBox2
+        'gbox3
         '
-        Me.GroupBox2.Controls.Add(Me.RadioButton13)
-        Me.GroupBox2.Controls.Add(Me.RadioButton14)
-        Me.GroupBox2.Controls.Add(Me.RadioButton15)
-        Me.GroupBox2.Controls.Add(Me.RadioButton16)
-        Me.GroupBox2.Controls.Add(Me.RadioButton17)
-        Me.GroupBox2.Controls.Add(Me.RadioButton18)
-        Me.GroupBox2.Controls.Add(Me.Label8)
-        Me.GroupBox2.Location = New System.Drawing.Point(15, 362)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(721, 46)
-        Me.GroupBox2.TabIndex = 106
-        Me.GroupBox2.TabStop = False
+        Me.gbox3.Controls.Add(Me.RB3_U)
+        Me.gbox3.Controls.Add(Me.RB3_5)
+        Me.gbox3.Controls.Add(Me.RB3_4)
+        Me.gbox3.Controls.Add(Me.RB3_3)
+        Me.gbox3.Controls.Add(Me.RB3_2)
+        Me.gbox3.Controls.Add(Me.RB3_1)
+        Me.gbox3.Controls.Add(Me.lblInterpersonal)
+        Me.gbox3.Location = New System.Drawing.Point(15, 362)
+        Me.gbox3.Name = "gbox3"
+        Me.gbox3.Size = New System.Drawing.Size(721, 46)
+        Me.gbox3.TabIndex = 106
+        Me.gbox3.TabStop = False
         '
-        'RadioButton13
+        'RB3_U
         '
-        Me.RadioButton13.AutoSize = True
-        Me.RadioButton13.Location = New System.Drawing.Point(621, 16)
-        Me.RadioButton13.Name = "RadioButton13"
-        Me.RadioButton13.Size = New System.Drawing.Size(33, 17)
-        Me.RadioButton13.TabIndex = 3
-        Me.RadioButton13.TabStop = True
-        Me.RadioButton13.Text = "U"
-        Me.RadioButton13.UseVisualStyleBackColor = True
+        Me.RB3_U.AutoSize = True
+        Me.RB3_U.Location = New System.Drawing.Point(621, 16)
+        Me.RB3_U.Name = "RB3_U"
+        Me.RB3_U.Size = New System.Drawing.Size(33, 17)
+        Me.RB3_U.TabIndex = 3
+        Me.RB3_U.TabStop = True
+        Me.RB3_U.Text = "U"
+        Me.RB3_U.UseVisualStyleBackColor = True
         '
-        'RadioButton14
+        'RB3_5
         '
-        Me.RadioButton14.AutoSize = True
-        Me.RadioButton14.Location = New System.Drawing.Point(539, 16)
-        Me.RadioButton14.Name = "RadioButton14"
-        Me.RadioButton14.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton14.TabIndex = 3
-        Me.RadioButton14.TabStop = True
-        Me.RadioButton14.Text = "5"
-        Me.RadioButton14.UseVisualStyleBackColor = True
+        Me.RB3_5.AutoSize = True
+        Me.RB3_5.Location = New System.Drawing.Point(539, 16)
+        Me.RB3_5.Name = "RB3_5"
+        Me.RB3_5.Size = New System.Drawing.Size(31, 17)
+        Me.RB3_5.TabIndex = 3
+        Me.RB3_5.TabStop = True
+        Me.RB3_5.Text = "5"
+        Me.RB3_5.UseVisualStyleBackColor = True
         '
-        'RadioButton15
+        'RB3_4
         '
-        Me.RadioButton15.AutoSize = True
-        Me.RadioButton15.Location = New System.Drawing.Point(457, 16)
-        Me.RadioButton15.Name = "RadioButton15"
-        Me.RadioButton15.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton15.TabIndex = 3
-        Me.RadioButton15.TabStop = True
-        Me.RadioButton15.Text = "4"
-        Me.RadioButton15.UseVisualStyleBackColor = True
+        Me.RB3_4.AutoSize = True
+        Me.RB3_4.Location = New System.Drawing.Point(457, 16)
+        Me.RB3_4.Name = "RB3_4"
+        Me.RB3_4.Size = New System.Drawing.Size(31, 17)
+        Me.RB3_4.TabIndex = 3
+        Me.RB3_4.TabStop = True
+        Me.RB3_4.Text = "4"
+        Me.RB3_4.UseVisualStyleBackColor = True
         '
-        'RadioButton16
+        'RB3_3
         '
-        Me.RadioButton16.AutoSize = True
-        Me.RadioButton16.Location = New System.Drawing.Point(375, 16)
-        Me.RadioButton16.Name = "RadioButton16"
-        Me.RadioButton16.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton16.TabIndex = 3
-        Me.RadioButton16.TabStop = True
-        Me.RadioButton16.Text = "3"
-        Me.RadioButton16.UseVisualStyleBackColor = True
+        Me.RB3_3.AutoSize = True
+        Me.RB3_3.Location = New System.Drawing.Point(375, 16)
+        Me.RB3_3.Name = "RB3_3"
+        Me.RB3_3.Size = New System.Drawing.Size(31, 17)
+        Me.RB3_3.TabIndex = 3
+        Me.RB3_3.TabStop = True
+        Me.RB3_3.Text = "3"
+        Me.RB3_3.UseVisualStyleBackColor = True
         '
-        'RadioButton17
+        'RB3_2
         '
-        Me.RadioButton17.AutoSize = True
-        Me.RadioButton17.Location = New System.Drawing.Point(293, 16)
-        Me.RadioButton17.Name = "RadioButton17"
-        Me.RadioButton17.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton17.TabIndex = 2
-        Me.RadioButton17.TabStop = True
-        Me.RadioButton17.Text = "2"
-        Me.RadioButton17.UseVisualStyleBackColor = True
+        Me.RB3_2.AutoSize = True
+        Me.RB3_2.Location = New System.Drawing.Point(293, 16)
+        Me.RB3_2.Name = "RB3_2"
+        Me.RB3_2.Size = New System.Drawing.Size(31, 17)
+        Me.RB3_2.TabIndex = 2
+        Me.RB3_2.TabStop = True
+        Me.RB3_2.Text = "2"
+        Me.RB3_2.UseVisualStyleBackColor = True
         '
-        'RadioButton18
+        'RB3_1
         '
-        Me.RadioButton18.AutoSize = True
-        Me.RadioButton18.Location = New System.Drawing.Point(211, 16)
-        Me.RadioButton18.Name = "RadioButton18"
-        Me.RadioButton18.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton18.TabIndex = 1
-        Me.RadioButton18.TabStop = True
-        Me.RadioButton18.Text = "1"
-        Me.RadioButton18.UseVisualStyleBackColor = True
+        Me.RB3_1.AutoSize = True
+        Me.RB3_1.Location = New System.Drawing.Point(211, 16)
+        Me.RB3_1.Name = "RB3_1"
+        Me.RB3_1.Size = New System.Drawing.Size(31, 17)
+        Me.RB3_1.TabIndex = 1
+        Me.RB3_1.TabStop = True
+        Me.RB3_1.Text = "1"
+        Me.RB3_1.UseVisualStyleBackColor = True
         '
-        'Label8
+        'lblInterpersonal
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(3, 17)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(95, 13)
-        Me.Label8.TabIndex = 0
-        Me.Label8.Text = "Interpersonal Skills"
+        Me.lblInterpersonal.AutoSize = True
+        Me.lblInterpersonal.Location = New System.Drawing.Point(3, 17)
+        Me.lblInterpersonal.Name = "lblInterpersonal"
+        Me.lblInterpersonal.Size = New System.Drawing.Size(95, 13)
+        Me.lblInterpersonal.TabIndex = 0
+        Me.lblInterpersonal.Text = "Interpersonal Skills"
         '
-        'GroupBox3
+        'gbox4
         '
-        Me.GroupBox3.Controls.Add(Me.RadioButton19)
-        Me.GroupBox3.Controls.Add(Me.RadioButton20)
-        Me.GroupBox3.Controls.Add(Me.RadioButton21)
-        Me.GroupBox3.Controls.Add(Me.RadioButton22)
-        Me.GroupBox3.Controls.Add(Me.RadioButton23)
-        Me.GroupBox3.Controls.Add(Me.RadioButton24)
-        Me.GroupBox3.Controls.Add(Me.Label9)
-        Me.GroupBox3.Location = New System.Drawing.Point(15, 414)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(721, 46)
-        Me.GroupBox3.TabIndex = 106
-        Me.GroupBox3.TabStop = False
+        Me.gbox4.Controls.Add(Me.RB4_U)
+        Me.gbox4.Controls.Add(Me.RB4_5)
+        Me.gbox4.Controls.Add(Me.RB4_4)
+        Me.gbox4.Controls.Add(Me.RB4_3)
+        Me.gbox4.Controls.Add(Me.RB4_2)
+        Me.gbox4.Controls.Add(Me.RB4_1)
+        Me.gbox4.Controls.Add(Me.lblKnowledge)
+        Me.gbox4.Location = New System.Drawing.Point(15, 414)
+        Me.gbox4.Name = "gbox4"
+        Me.gbox4.Size = New System.Drawing.Size(721, 46)
+        Me.gbox4.TabIndex = 106
+        Me.gbox4.TabStop = False
         '
-        'RadioButton19
+        'RB4_U
         '
-        Me.RadioButton19.AutoSize = True
-        Me.RadioButton19.Location = New System.Drawing.Point(621, 16)
-        Me.RadioButton19.Name = "RadioButton19"
-        Me.RadioButton19.Size = New System.Drawing.Size(33, 17)
-        Me.RadioButton19.TabIndex = 3
-        Me.RadioButton19.TabStop = True
-        Me.RadioButton19.Text = "U"
-        Me.RadioButton19.UseVisualStyleBackColor = True
+        Me.RB4_U.AutoSize = True
+        Me.RB4_U.Location = New System.Drawing.Point(621, 16)
+        Me.RB4_U.Name = "RB4_U"
+        Me.RB4_U.Size = New System.Drawing.Size(33, 17)
+        Me.RB4_U.TabIndex = 3
+        Me.RB4_U.TabStop = True
+        Me.RB4_U.Text = "U"
+        Me.RB4_U.UseVisualStyleBackColor = True
         '
-        'RadioButton20
+        'RB4_5
         '
-        Me.RadioButton20.AutoSize = True
-        Me.RadioButton20.Location = New System.Drawing.Point(539, 16)
-        Me.RadioButton20.Name = "RadioButton20"
-        Me.RadioButton20.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton20.TabIndex = 3
-        Me.RadioButton20.TabStop = True
-        Me.RadioButton20.Text = "5"
-        Me.RadioButton20.UseVisualStyleBackColor = True
+        Me.RB4_5.AutoSize = True
+        Me.RB4_5.Location = New System.Drawing.Point(539, 16)
+        Me.RB4_5.Name = "RB4_5"
+        Me.RB4_5.Size = New System.Drawing.Size(31, 17)
+        Me.RB4_5.TabIndex = 3
+        Me.RB4_5.TabStop = True
+        Me.RB4_5.Text = "5"
+        Me.RB4_5.UseVisualStyleBackColor = True
         '
-        'RadioButton21
+        'RB4_4
         '
-        Me.RadioButton21.AutoSize = True
-        Me.RadioButton21.Location = New System.Drawing.Point(457, 16)
-        Me.RadioButton21.Name = "RadioButton21"
-        Me.RadioButton21.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton21.TabIndex = 3
-        Me.RadioButton21.TabStop = True
-        Me.RadioButton21.Text = "4"
-        Me.RadioButton21.UseVisualStyleBackColor = True
+        Me.RB4_4.AutoSize = True
+        Me.RB4_4.Location = New System.Drawing.Point(457, 16)
+        Me.RB4_4.Name = "RB4_4"
+        Me.RB4_4.Size = New System.Drawing.Size(31, 17)
+        Me.RB4_4.TabIndex = 3
+        Me.RB4_4.TabStop = True
+        Me.RB4_4.Text = "4"
+        Me.RB4_4.UseVisualStyleBackColor = True
         '
-        'RadioButton22
+        'RB4_3
         '
-        Me.RadioButton22.AutoSize = True
-        Me.RadioButton22.Location = New System.Drawing.Point(375, 16)
-        Me.RadioButton22.Name = "RadioButton22"
-        Me.RadioButton22.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton22.TabIndex = 3
-        Me.RadioButton22.TabStop = True
-        Me.RadioButton22.Text = "3"
-        Me.RadioButton22.UseVisualStyleBackColor = True
+        Me.RB4_3.AutoSize = True
+        Me.RB4_3.Location = New System.Drawing.Point(375, 16)
+        Me.RB4_3.Name = "RB4_3"
+        Me.RB4_3.Size = New System.Drawing.Size(31, 17)
+        Me.RB4_3.TabIndex = 3
+        Me.RB4_3.TabStop = True
+        Me.RB4_3.Text = "3"
+        Me.RB4_3.UseVisualStyleBackColor = True
         '
-        'RadioButton23
+        'RB4_2
         '
-        Me.RadioButton23.AutoSize = True
-        Me.RadioButton23.Location = New System.Drawing.Point(293, 16)
-        Me.RadioButton23.Name = "RadioButton23"
-        Me.RadioButton23.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton23.TabIndex = 2
-        Me.RadioButton23.TabStop = True
-        Me.RadioButton23.Text = "2"
-        Me.RadioButton23.UseVisualStyleBackColor = True
+        Me.RB4_2.AutoSize = True
+        Me.RB4_2.Location = New System.Drawing.Point(293, 16)
+        Me.RB4_2.Name = "RB4_2"
+        Me.RB4_2.Size = New System.Drawing.Size(31, 17)
+        Me.RB4_2.TabIndex = 2
+        Me.RB4_2.TabStop = True
+        Me.RB4_2.Text = "2"
+        Me.RB4_2.UseVisualStyleBackColor = True
         '
-        'RadioButton24
+        'RB4_1
         '
-        Me.RadioButton24.AutoSize = True
-        Me.RadioButton24.Location = New System.Drawing.Point(211, 16)
-        Me.RadioButton24.Name = "RadioButton24"
-        Me.RadioButton24.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton24.TabIndex = 1
-        Me.RadioButton24.TabStop = True
-        Me.RadioButton24.Text = "1"
-        Me.RadioButton24.UseVisualStyleBackColor = True
+        Me.RB4_1.AutoSize = True
+        Me.RB4_1.Location = New System.Drawing.Point(211, 16)
+        Me.RB4_1.Name = "RB4_1"
+        Me.RB4_1.Size = New System.Drawing.Size(31, 17)
+        Me.RB4_1.TabIndex = 1
+        Me.RB4_1.TabStop = True
+        Me.RB4_1.Text = "1"
+        Me.RB4_1.UseVisualStyleBackColor = True
         '
-        'Label9
+        'lblKnowledge
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(3, 17)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(178, 13)
-        Me.Label9.TabIndex = 0
-        Me.Label9.Text = "Knowledge about Areas of Specialty"
+        Me.lblKnowledge.AutoSize = True
+        Me.lblKnowledge.Location = New System.Drawing.Point(3, 17)
+        Me.lblKnowledge.Name = "lblKnowledge"
+        Me.lblKnowledge.Size = New System.Drawing.Size(178, 13)
+        Me.lblKnowledge.TabIndex = 0
+        Me.lblKnowledge.Text = "Knowledge about Areas of Specialty"
         '
-        'GroupBox4
+        'gbox5
         '
-        Me.GroupBox4.Controls.Add(Me.RadioButton25)
-        Me.GroupBox4.Controls.Add(Me.RadioButton26)
-        Me.GroupBox4.Controls.Add(Me.RadioButton27)
-        Me.GroupBox4.Controls.Add(Me.RadioButton28)
-        Me.GroupBox4.Controls.Add(Me.RadioButton29)
-        Me.GroupBox4.Controls.Add(Me.RadioButton30)
-        Me.GroupBox4.Controls.Add(Me.Label10)
-        Me.GroupBox4.Location = New System.Drawing.Point(15, 466)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(721, 46)
-        Me.GroupBox4.TabIndex = 106
-        Me.GroupBox4.TabStop = False
+        Me.gbox5.Controls.Add(Me.RB5_U)
+        Me.gbox5.Controls.Add(Me.RB5_5)
+        Me.gbox5.Controls.Add(Me.RB5_4)
+        Me.gbox5.Controls.Add(Me.RB5_3)
+        Me.gbox5.Controls.Add(Me.RB5_2)
+        Me.gbox5.Controls.Add(Me.RB5_1)
+        Me.gbox5.Controls.Add(Me.lblCommunications)
+        Me.gbox5.Location = New System.Drawing.Point(15, 466)
+        Me.gbox5.Name = "gbox5"
+        Me.gbox5.Size = New System.Drawing.Size(721, 46)
+        Me.gbox5.TabIndex = 106
+        Me.gbox5.TabStop = False
         '
-        'RadioButton25
+        'RB5_U
         '
-        Me.RadioButton25.AutoSize = True
-        Me.RadioButton25.Location = New System.Drawing.Point(621, 16)
-        Me.RadioButton25.Name = "RadioButton25"
-        Me.RadioButton25.Size = New System.Drawing.Size(33, 17)
-        Me.RadioButton25.TabIndex = 3
-        Me.RadioButton25.TabStop = True
-        Me.RadioButton25.Text = "U"
-        Me.RadioButton25.UseVisualStyleBackColor = True
+        Me.RB5_U.AutoSize = True
+        Me.RB5_U.Location = New System.Drawing.Point(621, 16)
+        Me.RB5_U.Name = "RB5_U"
+        Me.RB5_U.Size = New System.Drawing.Size(33, 17)
+        Me.RB5_U.TabIndex = 3
+        Me.RB5_U.TabStop = True
+        Me.RB5_U.Text = "U"
+        Me.RB5_U.UseVisualStyleBackColor = True
         '
-        'RadioButton26
+        'RB5_5
         '
-        Me.RadioButton26.AutoSize = True
-        Me.RadioButton26.Location = New System.Drawing.Point(539, 16)
-        Me.RadioButton26.Name = "RadioButton26"
-        Me.RadioButton26.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton26.TabIndex = 3
-        Me.RadioButton26.TabStop = True
-        Me.RadioButton26.Text = "5"
-        Me.RadioButton26.UseVisualStyleBackColor = True
+        Me.RB5_5.AutoSize = True
+        Me.RB5_5.Location = New System.Drawing.Point(539, 16)
+        Me.RB5_5.Name = "RB5_5"
+        Me.RB5_5.Size = New System.Drawing.Size(31, 17)
+        Me.RB5_5.TabIndex = 3
+        Me.RB5_5.TabStop = True
+        Me.RB5_5.Text = "5"
+        Me.RB5_5.UseVisualStyleBackColor = True
         '
-        'RadioButton27
+        'RB5_4
         '
-        Me.RadioButton27.AutoSize = True
-        Me.RadioButton27.Location = New System.Drawing.Point(457, 16)
-        Me.RadioButton27.Name = "RadioButton27"
-        Me.RadioButton27.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton27.TabIndex = 3
-        Me.RadioButton27.TabStop = True
-        Me.RadioButton27.Text = "4"
-        Me.RadioButton27.UseVisualStyleBackColor = True
+        Me.RB5_4.AutoSize = True
+        Me.RB5_4.Location = New System.Drawing.Point(457, 16)
+        Me.RB5_4.Name = "RB5_4"
+        Me.RB5_4.Size = New System.Drawing.Size(31, 17)
+        Me.RB5_4.TabIndex = 3
+        Me.RB5_4.TabStop = True
+        Me.RB5_4.Text = "4"
+        Me.RB5_4.UseVisualStyleBackColor = True
         '
-        'RadioButton28
+        'RB5_3
         '
-        Me.RadioButton28.AutoSize = True
-        Me.RadioButton28.Location = New System.Drawing.Point(375, 16)
-        Me.RadioButton28.Name = "RadioButton28"
-        Me.RadioButton28.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton28.TabIndex = 3
-        Me.RadioButton28.TabStop = True
-        Me.RadioButton28.Text = "3"
-        Me.RadioButton28.UseVisualStyleBackColor = True
+        Me.RB5_3.AutoSize = True
+        Me.RB5_3.Location = New System.Drawing.Point(375, 16)
+        Me.RB5_3.Name = "RB5_3"
+        Me.RB5_3.Size = New System.Drawing.Size(31, 17)
+        Me.RB5_3.TabIndex = 3
+        Me.RB5_3.TabStop = True
+        Me.RB5_3.Text = "3"
+        Me.RB5_3.UseVisualStyleBackColor = True
         '
-        'RadioButton29
+        'RB5_2
         '
-        Me.RadioButton29.AutoSize = True
-        Me.RadioButton29.Location = New System.Drawing.Point(293, 16)
-        Me.RadioButton29.Name = "RadioButton29"
-        Me.RadioButton29.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton29.TabIndex = 2
-        Me.RadioButton29.TabStop = True
-        Me.RadioButton29.Text = "2"
-        Me.RadioButton29.UseVisualStyleBackColor = True
+        Me.RB5_2.AutoSize = True
+        Me.RB5_2.Location = New System.Drawing.Point(293, 16)
+        Me.RB5_2.Name = "RB5_2"
+        Me.RB5_2.Size = New System.Drawing.Size(31, 17)
+        Me.RB5_2.TabIndex = 2
+        Me.RB5_2.TabStop = True
+        Me.RB5_2.Text = "2"
+        Me.RB5_2.UseVisualStyleBackColor = True
         '
-        'RadioButton30
+        'RB5_1
         '
-        Me.RadioButton30.AutoSize = True
-        Me.RadioButton30.Location = New System.Drawing.Point(211, 16)
-        Me.RadioButton30.Name = "RadioButton30"
-        Me.RadioButton30.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton30.TabIndex = 1
-        Me.RadioButton30.TabStop = True
-        Me.RadioButton30.Text = "1"
-        Me.RadioButton30.UseVisualStyleBackColor = True
+        Me.RB5_1.AutoSize = True
+        Me.RB5_1.Location = New System.Drawing.Point(211, 16)
+        Me.RB5_1.Name = "RB5_1"
+        Me.RB5_1.Size = New System.Drawing.Size(31, 17)
+        Me.RB5_1.TabIndex = 1
+        Me.RB5_1.TabStop = True
+        Me.RB5_1.Text = "1"
+        Me.RB5_1.UseVisualStyleBackColor = True
         '
-        'Label10
+        'lblCommunications
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(3, 17)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(84, 13)
-        Me.Label10.TabIndex = 0
-        Me.Label10.Text = "Communications"
+        Me.lblCommunications.AutoSize = True
+        Me.lblCommunications.Location = New System.Drawing.Point(3, 17)
+        Me.lblCommunications.Name = "lblCommunications"
+        Me.lblCommunications.Size = New System.Drawing.Size(84, 13)
+        Me.lblCommunications.TabIndex = 0
+        Me.lblCommunications.Text = "Communications"
         '
         'frmEvaluation
         '
@@ -789,11 +789,11 @@ Partial Class frmEvaluation
         Me.BackColor = System.Drawing.Color.LightBlue
         Me.ClientSize = New System.Drawing.Size(840, 569)
         Me.Controls.Add(Me.gboxRatingScale)
-        Me.Controls.Add(Me.GroupBox4)
-        Me.Controls.Add(Me.GroupBox3)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.gboxVisionLeadership)
+        Me.Controls.Add(Me.gbox5)
+        Me.Controls.Add(Me.gbox4)
+        Me.Controls.Add(Me.gbox3)
+        Me.Controls.Add(Me.gbox2)
+        Me.Controls.Add(Me.gbox1)
         Me.Controls.Add(Me.lblInformation)
         Me.Controls.Add(Me.txtInterviewer)
         Me.Controls.Add(Me.txtDepartment)
@@ -813,18 +813,18 @@ Partial Class frmEvaluation
         Me.Text = "frmEvaluation"
         Me.MenuStrip.ResumeLayout(False)
         Me.MenuStrip.PerformLayout()
-        Me.gboxVisionLeadership.ResumeLayout(False)
-        Me.gboxVisionLeadership.PerformLayout()
+        Me.gbox1.ResumeLayout(False)
+        Me.gbox1.PerformLayout()
         Me.gboxRatingScale.ResumeLayout(False)
         Me.gboxRatingScale.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
+        Me.gbox2.ResumeLayout(False)
+        Me.gbox2.PerformLayout()
+        Me.gbox3.ResumeLayout(False)
+        Me.gbox3.PerformLayout()
+        Me.gbox4.ResumeLayout(False)
+        Me.gbox4.PerformLayout()
+        Me.gbox5.ResumeLayout(False)
+        Me.gbox5.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -850,52 +850,52 @@ Partial Class frmEvaluation
     Friend WithEvents txtDepartment As TextBox
     Friend WithEvents txtInterviewer As TextBox
     Friend WithEvents lblInformation As Label
-    Friend WithEvents gboxVisionLeadership As GroupBox
-    Friend WithEvents lblVisionLeadership As Label
+    Friend WithEvents gbox1 As GroupBox
+    Friend WithEvents lblVision As Label
     Friend WithEvents gboxRatingScale As GroupBox
     Friend WithEvents lblRatingScale As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton6 As RadioButton
-    Friend WithEvents RadioButton5 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioButton7 As RadioButton
-    Friend WithEvents RadioButton8 As RadioButton
-    Friend WithEvents RadioButton9 As RadioButton
-    Friend WithEvents RadioButton10 As RadioButton
-    Friend WithEvents RadioButton11 As RadioButton
-    Friend WithEvents RadioButton12 As RadioButton
-    Friend WithEvents Label7 As Label
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents RadioButton13 As RadioButton
-    Friend WithEvents RadioButton14 As RadioButton
-    Friend WithEvents RadioButton15 As RadioButton
-    Friend WithEvents RadioButton16 As RadioButton
-    Friend WithEvents RadioButton17 As RadioButton
-    Friend WithEvents RadioButton18 As RadioButton
-    Friend WithEvents Label8 As Label
-    Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents RadioButton19 As RadioButton
-    Friend WithEvents RadioButton20 As RadioButton
-    Friend WithEvents RadioButton21 As RadioButton
-    Friend WithEvents RadioButton22 As RadioButton
-    Friend WithEvents RadioButton23 As RadioButton
-    Friend WithEvents RadioButton24 As RadioButton
-    Friend WithEvents Label9 As Label
-    Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents RadioButton25 As RadioButton
-    Friend WithEvents RadioButton26 As RadioButton
-    Friend WithEvents RadioButton27 As RadioButton
-    Friend WithEvents RadioButton28 As RadioButton
-    Friend WithEvents RadioButton29 As RadioButton
-    Friend WithEvents RadioButton30 As RadioButton
-    Friend WithEvents Label10 As Label
+    Friend WithEvents lbl2 As Label
+    Friend WithEvents lbl3 As Label
+    Friend WithEvents lbl4 As Label
+    Friend WithEvents lbl5 As Label
+    Friend WithEvents lblU As Label
+    Friend WithEvents lbl1 As Label
+    Friend WithEvents RB1_3 As RadioButton
+    Friend WithEvents RB1_2 As RadioButton
+    Friend WithEvents RB1_1 As RadioButton
+    Friend WithEvents RB1_U As RadioButton
+    Friend WithEvents RB1_5 As RadioButton
+    Friend WithEvents RB1_4 As RadioButton
+    Friend WithEvents gbox2 As GroupBox
+    Friend WithEvents RB2_U As RadioButton
+    Friend WithEvents RB2_5 As RadioButton
+    Friend WithEvents RB2_4 As RadioButton
+    Friend WithEvents RB2_3 As RadioButton
+    Friend WithEvents RB2_2 As RadioButton
+    Friend WithEvents RB2_1 As RadioButton
+    Friend WithEvents lblJudgment As Label
+    Friend WithEvents gbox3 As GroupBox
+    Friend WithEvents RB3_U As RadioButton
+    Friend WithEvents RB3_5 As RadioButton
+    Friend WithEvents RB3_4 As RadioButton
+    Friend WithEvents RB3_3 As RadioButton
+    Friend WithEvents RB3_2 As RadioButton
+    Friend WithEvents RB3_1 As RadioButton
+    Friend WithEvents lblInterpersonal As Label
+    Friend WithEvents gbox4 As GroupBox
+    Friend WithEvents RB4_U As RadioButton
+    Friend WithEvents RB4_5 As RadioButton
+    Friend WithEvents RB4_4 As RadioButton
+    Friend WithEvents RB4_3 As RadioButton
+    Friend WithEvents RB4_2 As RadioButton
+    Friend WithEvents RB4_1 As RadioButton
+    Friend WithEvents lblKnowledge As Label
+    Friend WithEvents gbox5 As GroupBox
+    Friend WithEvents RB5_U As RadioButton
+    Friend WithEvents RB5_5 As RadioButton
+    Friend WithEvents RB5_4 As RadioButton
+    Friend WithEvents RB5_3 As RadioButton
+    Friend WithEvents RB5_2 As RadioButton
+    Friend WithEvents RB5_1 As RadioButton
+    Friend WithEvents lblCommunications As Label
 End Class
