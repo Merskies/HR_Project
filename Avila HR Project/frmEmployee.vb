@@ -1,11 +1,12 @@
 ﻿Imports System.IO
 
 Public Class frmEmployee
-    Structure PersonalInformation 'Declare Structure
+    Structure EmployeeInformation 'Declare Structure
+        Dim Index As Integer
         Dim ID As String
         Dim FirstName As String
         Dim LastName As String
-        Dim Middle As String
+        Dim MiddleInitial As String
         Dim Address As String
         Dim AptRoom As String
         Dim City As String
@@ -21,33 +22,34 @@ Public Class frmEmployee
         Dim DateRecorded As String
     End Structure
 
-    Public Employee() As PersonalInformation 'Build Array Employee from the Structure
+    Public Employees() As EmployeeInformation 'Build Array Employee from the Structure
 
     Private Sub LoadInfo() Handles Me.Load
         Dim Line As String
         Dim Data(16) As String
         Dim Individual() As String = IO.File.ReadAllLines("Employees.txt")
-        ReDim Preserve Employee(Individual.Count - 1)
+        ReDim Preserve Employees(Individual.Count - 1)
         For i As Integer = 0 To Individual.Count - 1
             Line = Individual(i)
             Data = Line.Split(","c)
-            Employee(i).ID = Data(0)
-            Employee(i).FirstName = Data(1)
-            Employee(i).LastName = Data(2)
-            Employee(i).Middle = Data(3)
-            Employee(i).Address = Data(4)
-            Employee(i).AptRoom = Data(5)
-            Employee(i).City = Data(6)
-            Employee(i).State = Data(7)
-            Employee(i).ZipCode = Data(8)
-            Employee(i).MainPhone = Data(9)
-            Employee(i).AlternatePhone = Data(10)
-            Employee(i).Email = Data(11)
-            Employee(i).SSN = Data(12)
-            Employee(i).Birthday = Data(13)
-            Employee(i).MaritalStatus = Data(14)
-            Employee(i).Gender = Data(15)
-            Employee(i).DateRecorded = Data(16)
+            Employees(i).Index = i
+            Employees(i).ID = Data(0)
+            Employees(i).FirstName = Data(1)
+            Employees(i).LastName = Data(2)
+            Employees(i).MiddleInitial = Data(3)
+            Employees(i).Address = Data(4)
+            Employees(i).AptRoom = Data(5)
+            Employees(i).City = Data(6)
+            Employees(i).State = Data(7)
+            Employees(i).ZipCode = Data(8)
+            Employees(i).MainPhone = Data(9)
+            Employees(i).AlternatePhone = Data(10)
+            Employees(i).Email = Data(11)
+            Employees(i).SSN = Data(12)
+            Employees(i).Birthday = Data(13)
+            Employees(i).MaritalStatus = Data(14)
+            Employees(i).Gender = Data(15)
+            Employees(i).DateRecorded = Data(16)
         Next
     End Sub
 
@@ -72,6 +74,8 @@ Public Class frmEmployee
         EmployeeID = lineCount + 1
         txtID.Text = EmployeeID
         txtDateRecorded.Text = Date.Today.ToString("dd-MM-yyyy")
+        BtnSaveEmployee.Enabled = True
+        BtnUpdate.Enabled = False
     End Sub
 
     Private Sub BtnSaveEmployee_Click(sender As Object, e As EventArgs) Handles BtnSaveEmployee.Click, SaveToolStripMenuItem.Click
@@ -103,15 +107,15 @@ Public Class frmEmployee
             Select txt.Name
 
         If ID = "" Then
-            MessageBox.show("Please Click the New button before trying to enter information for a new employee")
+            MessageBox.Show("Please Click the New button before trying to enter information for a new employee")
         ElseIf emptyTextBoxes.Any Then
-            MessageBox.show(String.Format("Please fill following textboxes: {0}.", String.Join(", ", emptyTextBoxes)))
-            MessageBox.show("If you do not have the information to fill in, use NA instead.")
+            MessageBox.Show(String.Format("Please fill following textboxes: {0}.", String.Join(", ", emptyTextBoxes)))
+            MessageBox.Show("If you do not have the information to fill in, use NA instead.")
         Else
             Dim sw As StreamWriter = IO.File.AppendText("Employees.txt")
             sw.WriteLine(Info)
             sw.Close()
-            MessageBox.show(FirstN & " " & LastN & " added to file.", "Name Added")
+            MessageBox.Show(FirstN & " " & LastN & " added to file.", "Name Added")
             ClearAllTextBoxes()
             txtLastName.Focus()
         End If
@@ -120,28 +124,33 @@ Public Class frmEmployee
     Private Sub BtnUpdate_Click(sender As Object, e As EventArgs) Handles BtnUpdate.Click
         Dim EmployeeID As String
         EmployeeID = txtID.Text
-        If EmployeeID <> "" Then
-            If IDInFile(True) Then
-                Dim sr As StreamReader = File.OpenText("Employees.txt")
-                Dim sw As StreamWriter = File.CreateText("Temp.txt")
-                Dim Employee As String
-                Do Until sr.EndOfStream
-                    Employee = sr.ReadLine
-                    If Employee <> EmployeeID Then
-                        sw.WriteLine(Employee)
-                    End If
-                Loop
-                sr.Close()
-                sw.Close()
-                File.Delete("Employees.txt")
-                File.Move("Temp.txt", "Employees.txt")
-                MessageBox.Show(EmployeeID & " Updated.", "Employee Updated")
-            Else
-                MessageBox.Show(EmployeeID & " is not in the file.", "Employee not found")
+        Dim updated_data As String = ""
+        For Each em In Employees
+            If EmployeeID = em.ID Then
+                'ID = txtID.Text
+                em.FirstName = txtFirstName.Text
+                em.LastName = txtLastName.Text
+                em.MiddleInitial = txtMiddle.Text
+                em.Address = txtAddress.Text
+                em.AptRoom = txtAptRoom.Text
+                em.City = txtCity.Text
+                em.State = txtState.Text
+                em.ZipCode = txtZipCode.Text
+                em.MainPhone = txtMainPhone.Text
+                em.AlternatePhone = txtAltPhone.Text
+                em.Email = txtEmail.Text
+                em.SSN = txtSSN.Text
+                em.Birthday = txtBirthday.Text
+                em.MaritalStatus = txtMaritalStatus.Text
+                em.Gender = txtGender.Text
+                em.DateRecorded = txtDateRecorded.Text
             End If
-        Else
-            MessageBox.Show("ID is not found", "ID Error")
-        End If
+            With em
+                updated_data &= $"{ .ID},{ .FirstName},{ .LastName},{ .MiddleInitial},{ .Address},{ .AptRoom},{ .City},{ .State},{ .ZipCode},{ .MainPhone},{ .AlternatePhone},{ .Email},{ .SSN},{ .Birthday},{ .MaritalStatus},{ .Gender},{ .DateRecorded}" & vbCrLf
+            End With
+        Next
+        File.WriteAllText("Employees.txt", updated_data)
+        MessageBox.Show(EmployeeID & " Updated.", "Employee Updated")
         ClearAllTextBoxes()
         txtFirstName.Focus()
     End Sub
@@ -149,9 +158,9 @@ Public Class frmEmployee
     Private Sub BtnDisplay_Click(sender As Object, e As EventArgs) Handles BtnDisplay.Click, DisplayToolStripMenuItem.Click
         'This code is adding values to the structure.
         LoadInfo()
-        Dim NameQuery = From Name In Employee
+        Dim NameQuery = From Name In Employees
                         Order By Name.ID Ascending
-                        Select Name.ID, Name.FirstName, Name.LastName, Name.Middle, Name.Address, Name.AptRoom, Name.City, Name.State, Name.ZipCode, Name.MainPhone, Name.AlternatePhone, Name.Email, Name.SSN, Name.Birthday, Name.MaritalStatus, Name.Gender, Name.DateRecorded
+                        Select Name.ID, Name.FirstName, Name.LastName, Name.MiddleInitial, Name.Address, Name.AptRoom, Name.City, Name.State, Name.ZipCode, Name.MainPhone, Name.AlternatePhone, Name.Email, Name.SSN, Name.Birthday, Name.MaritalStatus, Name.Gender, Name.DateRecorded
         dvgEmployee.DataSource = NameQuery.ToList
         dvgEmployee.CurrentCell = Nothing
         dvgEmployee.Columns("ID").HeaderText = "Employee ID"
@@ -178,17 +187,17 @@ Public Class frmEmployee
         LoadInfo()
         Dim IDN As String
         IDN = InputBox("Please enter the employee's ID number to search", "ID Search")
-        Dim IDQuery = From Name In Employee
+        Dim IDQuery = From Name In Employees
                       Order By Name.ID Ascending
                       Let NameID = Name.ID
                       Where NameID = IDN
-                      Select Name.ID, Name.FirstName, Name.LastName, Name.Middle, Name.Address, Name.AptRoom, Name.City, Name.State, Name.ZipCode, Name.MainPhone, Name.AlternatePhone, Name.Email, Name.SSN, Name.Birthday, Name.MaritalStatus, Name.Gender, Name.DateRecorded
+                      Select Name.ID, Name.FirstName, Name.LastName, Name.MiddleInitial, Name.Address, Name.AptRoom, Name.City, Name.State, Name.ZipCode, Name.MainPhone, Name.AlternatePhone, Name.Email, Name.SSN, Name.Birthday, Name.MaritalStatus, Name.Gender, Name.DateRecorded
         If (IDQuery.Count <> 0) Then
             Dim DBEmployee = IDQuery.First
             txtID.Text = DBEmployee.ID
             txtFirstName.Text = DBEmployee.FirstName
             txtLastName.Text = DBEmployee.LastName
-            txtMiddle.Text = DBEmployee.Middle
+            txtMiddle.Text = DBEmployee.MiddleInitial
             txtAddress.Text = DBEmployee.Address
             txtAptRoom.Text = DBEmployee.AptRoom
             txtCity.Text = DBEmployee.City
@@ -202,6 +211,10 @@ Public Class frmEmployee
             txtMaritalStatus.Text = DBEmployee.MaritalStatus
             txtGender.Text = DBEmployee.Gender
             txtDateRecorded.Text = DBEmployee.DateRecorded
+
+            ' Enable/Disable Save/Update
+            BtnSaveEmployee.Enabled = False
+            BtnUpdate.Enabled = True
             Return
         Else
             MessageBox.Show("That ID cannot be found! Please try another ID!", "ID Not Found")
@@ -230,13 +243,18 @@ Public Class frmEmployee
         End If
     End Sub
 
+    ''' <summary>
+    ''' Checks whether given ID is in the Employees.txt.
+    ''' </summary>
+    ''' <param name="ID"></param>
+    ''' <returns></returns>
     Function IDInFile(ID As String) As Boolean
         If File.Exists("Employees.txt") Then
             Dim sr As StreamReader = File.OpenText("Employees.txt")
             Dim IDCheck As String
             Do Until sr.EndOfStream
                 IDCheck = sr.ReadLine
-                If IDCheck = ID Then
+                If IDCheck(0) = ID Then
                     sr.Close()
                     Return True
                 End If

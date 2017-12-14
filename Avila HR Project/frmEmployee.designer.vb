@@ -160,6 +160,7 @@ Partial Class frmEmployee
         '
         'BtnSaveEmployee
         '
+        Me.BtnSaveEmployee.Enabled = False
         Me.BtnSaveEmployee.Location = New System.Drawing.Point(393, 390)
         Me.BtnSaveEmployee.Name = "BtnSaveEmployee"
         Me.BtnSaveEmployee.Size = New System.Drawing.Size(75, 23)
@@ -180,6 +181,7 @@ Partial Class frmEmployee
         'BtnUpdate
         '
         Me.BtnUpdate.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.BtnUpdate.Enabled = False
         Me.BtnUpdate.Location = New System.Drawing.Point(483, 390)
         Me.BtnUpdate.Name = "BtnUpdate"
         Me.BtnUpdate.Size = New System.Drawing.Size(75, 23)
