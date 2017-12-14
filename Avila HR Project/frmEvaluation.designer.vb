@@ -264,7 +264,7 @@ Partial Class frmEvaluation
         Me.gbox1.Location = New System.Drawing.Point(15, 258)
         Me.gbox1.Name = "gbox1"
         Me.gbox1.Size = New System.Drawing.Size(721, 46)
-        Me.gbox1.TabIndex = 106
+        Me.gbox1.TabIndex = 5
         Me.gbox1.TabStop = False
         '
         'RB1_U
@@ -274,7 +274,6 @@ Partial Class frmEvaluation
         Me.RB1_U.Name = "RB1_U"
         Me.RB1_U.Size = New System.Drawing.Size(33, 17)
         Me.RB1_U.TabIndex = 3
-        Me.RB1_U.TabStop = True
         Me.RB1_U.Text = "U"
         Me.RB1_U.UseVisualStyleBackColor = True
         '
@@ -285,7 +284,6 @@ Partial Class frmEvaluation
         Me.RB1_5.Name = "RB1_5"
         Me.RB1_5.Size = New System.Drawing.Size(31, 17)
         Me.RB1_5.TabIndex = 3
-        Me.RB1_5.TabStop = True
         Me.RB1_5.Text = "5"
         Me.RB1_5.UseVisualStyleBackColor = True
         '
@@ -296,7 +294,6 @@ Partial Class frmEvaluation
         Me.RB1_4.Name = "RB1_4"
         Me.RB1_4.Size = New System.Drawing.Size(31, 17)
         Me.RB1_4.TabIndex = 3
-        Me.RB1_4.TabStop = True
         Me.RB1_4.Text = "4"
         Me.RB1_4.UseVisualStyleBackColor = True
         '
@@ -307,7 +304,6 @@ Partial Class frmEvaluation
         Me.RB1_3.Name = "RB1_3"
         Me.RB1_3.Size = New System.Drawing.Size(31, 17)
         Me.RB1_3.TabIndex = 3
-        Me.RB1_3.TabStop = True
         Me.RB1_3.Text = "3"
         Me.RB1_3.UseVisualStyleBackColor = True
         '
@@ -318,7 +314,6 @@ Partial Class frmEvaluation
         Me.RB1_2.Name = "RB1_2"
         Me.RB1_2.Size = New System.Drawing.Size(31, 17)
         Me.RB1_2.TabIndex = 2
-        Me.RB1_2.TabStop = True
         Me.RB1_2.Text = "2"
         Me.RB1_2.UseVisualStyleBackColor = True
         '
@@ -329,7 +324,6 @@ Partial Class frmEvaluation
         Me.RB1_1.Name = "RB1_1"
         Me.RB1_1.Size = New System.Drawing.Size(31, 17)
         Me.RB1_1.TabIndex = 1
-        Me.RB1_1.TabStop = True
         Me.RB1_1.Text = "1"
         Me.RB1_1.UseVisualStyleBackColor = True
         '
@@ -434,7 +428,7 @@ Partial Class frmEvaluation
         Me.gbox2.Location = New System.Drawing.Point(15, 310)
         Me.gbox2.Name = "gbox2"
         Me.gbox2.Size = New System.Drawing.Size(721, 46)
-        Me.gbox2.TabIndex = 106
+        Me.gbox2.TabIndex = 6
         Me.gbox2.TabStop = False
         '
         'RB2_U
@@ -444,7 +438,6 @@ Partial Class frmEvaluation
         Me.RB2_U.Name = "RB2_U"
         Me.RB2_U.Size = New System.Drawing.Size(33, 17)
         Me.RB2_U.TabIndex = 3
-        Me.RB2_U.TabStop = True
         Me.RB2_U.Text = "U"
         Me.RB2_U.UseVisualStyleBackColor = True
         '
@@ -455,7 +448,6 @@ Partial Class frmEvaluation
         Me.RB2_5.Name = "RB2_5"
         Me.RB2_5.Size = New System.Drawing.Size(31, 17)
         Me.RB2_5.TabIndex = 3
-        Me.RB2_5.TabStop = True
         Me.RB2_5.Text = "5"
         Me.RB2_5.UseVisualStyleBackColor = True
         '
@@ -466,7 +458,6 @@ Partial Class frmEvaluation
         Me.RB2_4.Name = "RB2_4"
         Me.RB2_4.Size = New System.Drawing.Size(31, 17)
         Me.RB2_4.TabIndex = 3
-        Me.RB2_4.TabStop = True
         Me.RB2_4.Text = "4"
         Me.RB2_4.UseVisualStyleBackColor = True
         '
@@ -477,7 +468,6 @@ Partial Class frmEvaluation
         Me.RB2_3.Name = "RB2_3"
         Me.RB2_3.Size = New System.Drawing.Size(31, 17)
         Me.RB2_3.TabIndex = 3
-        Me.RB2_3.TabStop = True
         Me.RB2_3.Text = "3"
         Me.RB2_3.UseVisualStyleBackColor = True
         '
@@ -488,7 +478,6 @@ Partial Class frmEvaluation
         Me.RB2_2.Name = "RB2_2"
         Me.RB2_2.Size = New System.Drawing.Size(31, 17)
         Me.RB2_2.TabIndex = 2
-        Me.RB2_2.TabStop = True
         Me.RB2_2.Text = "2"
         Me.RB2_2.UseVisualStyleBackColor = True
         '
@@ -499,7 +488,6 @@ Partial Class frmEvaluation
         Me.RB2_1.Name = "RB2_1"
         Me.RB2_1.Size = New System.Drawing.Size(31, 17)
         Me.RB2_1.TabIndex = 1
-        Me.RB2_1.TabStop = True
         Me.RB2_1.Text = "1"
         Me.RB2_1.UseVisualStyleBackColor = True
         '
@@ -524,7 +512,7 @@ Partial Class frmEvaluation
         Me.gbox3.Location = New System.Drawing.Point(15, 362)
         Me.gbox3.Name = "gbox3"
         Me.gbox3.Size = New System.Drawing.Size(721, 46)
-        Me.gbox3.TabIndex = 106
+        Me.gbox3.TabIndex = 7
         Me.gbox3.TabStop = False
         '
         'RB3_U
@@ -534,7 +522,6 @@ Partial Class frmEvaluation
         Me.RB3_U.Name = "RB3_U"
         Me.RB3_U.Size = New System.Drawing.Size(33, 17)
         Me.RB3_U.TabIndex = 3
-        Me.RB3_U.TabStop = True
         Me.RB3_U.Text = "U"
         Me.RB3_U.UseVisualStyleBackColor = True
         '
@@ -545,7 +532,6 @@ Partial Class frmEvaluation
         Me.RB3_5.Name = "RB3_5"
         Me.RB3_5.Size = New System.Drawing.Size(31, 17)
         Me.RB3_5.TabIndex = 3
-        Me.RB3_5.TabStop = True
         Me.RB3_5.Text = "5"
         Me.RB3_5.UseVisualStyleBackColor = True
         '
@@ -556,7 +542,6 @@ Partial Class frmEvaluation
         Me.RB3_4.Name = "RB3_4"
         Me.RB3_4.Size = New System.Drawing.Size(31, 17)
         Me.RB3_4.TabIndex = 3
-        Me.RB3_4.TabStop = True
         Me.RB3_4.Text = "4"
         Me.RB3_4.UseVisualStyleBackColor = True
         '
@@ -567,7 +552,6 @@ Partial Class frmEvaluation
         Me.RB3_3.Name = "RB3_3"
         Me.RB3_3.Size = New System.Drawing.Size(31, 17)
         Me.RB3_3.TabIndex = 3
-        Me.RB3_3.TabStop = True
         Me.RB3_3.Text = "3"
         Me.RB3_3.UseVisualStyleBackColor = True
         '
@@ -578,7 +562,6 @@ Partial Class frmEvaluation
         Me.RB3_2.Name = "RB3_2"
         Me.RB3_2.Size = New System.Drawing.Size(31, 17)
         Me.RB3_2.TabIndex = 2
-        Me.RB3_2.TabStop = True
         Me.RB3_2.Text = "2"
         Me.RB3_2.UseVisualStyleBackColor = True
         '
@@ -589,7 +572,6 @@ Partial Class frmEvaluation
         Me.RB3_1.Name = "RB3_1"
         Me.RB3_1.Size = New System.Drawing.Size(31, 17)
         Me.RB3_1.TabIndex = 1
-        Me.RB3_1.TabStop = True
         Me.RB3_1.Text = "1"
         Me.RB3_1.UseVisualStyleBackColor = True
         '
@@ -614,7 +596,7 @@ Partial Class frmEvaluation
         Me.gbox4.Location = New System.Drawing.Point(15, 414)
         Me.gbox4.Name = "gbox4"
         Me.gbox4.Size = New System.Drawing.Size(721, 46)
-        Me.gbox4.TabIndex = 106
+        Me.gbox4.TabIndex = 8
         Me.gbox4.TabStop = False
         '
         'RB4_U
@@ -624,7 +606,6 @@ Partial Class frmEvaluation
         Me.RB4_U.Name = "RB4_U"
         Me.RB4_U.Size = New System.Drawing.Size(33, 17)
         Me.RB4_U.TabIndex = 3
-        Me.RB4_U.TabStop = True
         Me.RB4_U.Text = "U"
         Me.RB4_U.UseVisualStyleBackColor = True
         '
@@ -635,7 +616,6 @@ Partial Class frmEvaluation
         Me.RB4_5.Name = "RB4_5"
         Me.RB4_5.Size = New System.Drawing.Size(31, 17)
         Me.RB4_5.TabIndex = 3
-        Me.RB4_5.TabStop = True
         Me.RB4_5.Text = "5"
         Me.RB4_5.UseVisualStyleBackColor = True
         '
@@ -646,7 +626,6 @@ Partial Class frmEvaluation
         Me.RB4_4.Name = "RB4_4"
         Me.RB4_4.Size = New System.Drawing.Size(31, 17)
         Me.RB4_4.TabIndex = 3
-        Me.RB4_4.TabStop = True
         Me.RB4_4.Text = "4"
         Me.RB4_4.UseVisualStyleBackColor = True
         '
@@ -657,7 +636,6 @@ Partial Class frmEvaluation
         Me.RB4_3.Name = "RB4_3"
         Me.RB4_3.Size = New System.Drawing.Size(31, 17)
         Me.RB4_3.TabIndex = 3
-        Me.RB4_3.TabStop = True
         Me.RB4_3.Text = "3"
         Me.RB4_3.UseVisualStyleBackColor = True
         '
@@ -668,7 +646,6 @@ Partial Class frmEvaluation
         Me.RB4_2.Name = "RB4_2"
         Me.RB4_2.Size = New System.Drawing.Size(31, 17)
         Me.RB4_2.TabIndex = 2
-        Me.RB4_2.TabStop = True
         Me.RB4_2.Text = "2"
         Me.RB4_2.UseVisualStyleBackColor = True
         '
@@ -679,7 +656,6 @@ Partial Class frmEvaluation
         Me.RB4_1.Name = "RB4_1"
         Me.RB4_1.Size = New System.Drawing.Size(31, 17)
         Me.RB4_1.TabIndex = 1
-        Me.RB4_1.TabStop = True
         Me.RB4_1.Text = "1"
         Me.RB4_1.UseVisualStyleBackColor = True
         '
@@ -704,7 +680,7 @@ Partial Class frmEvaluation
         Me.gbox5.Location = New System.Drawing.Point(15, 466)
         Me.gbox5.Name = "gbox5"
         Me.gbox5.Size = New System.Drawing.Size(721, 46)
-        Me.gbox5.TabIndex = 106
+        Me.gbox5.TabIndex = 9
         Me.gbox5.TabStop = False
         '
         'RB5_U
@@ -714,7 +690,6 @@ Partial Class frmEvaluation
         Me.RB5_U.Name = "RB5_U"
         Me.RB5_U.Size = New System.Drawing.Size(33, 17)
         Me.RB5_U.TabIndex = 3
-        Me.RB5_U.TabStop = True
         Me.RB5_U.Text = "U"
         Me.RB5_U.UseVisualStyleBackColor = True
         '
@@ -725,7 +700,6 @@ Partial Class frmEvaluation
         Me.RB5_5.Name = "RB5_5"
         Me.RB5_5.Size = New System.Drawing.Size(31, 17)
         Me.RB5_5.TabIndex = 3
-        Me.RB5_5.TabStop = True
         Me.RB5_5.Text = "5"
         Me.RB5_5.UseVisualStyleBackColor = True
         '
@@ -736,7 +710,6 @@ Partial Class frmEvaluation
         Me.RB5_4.Name = "RB5_4"
         Me.RB5_4.Size = New System.Drawing.Size(31, 17)
         Me.RB5_4.TabIndex = 3
-        Me.RB5_4.TabStop = True
         Me.RB5_4.Text = "4"
         Me.RB5_4.UseVisualStyleBackColor = True
         '
@@ -747,7 +720,6 @@ Partial Class frmEvaluation
         Me.RB5_3.Name = "RB5_3"
         Me.RB5_3.Size = New System.Drawing.Size(31, 17)
         Me.RB5_3.TabIndex = 3
-        Me.RB5_3.TabStop = True
         Me.RB5_3.Text = "3"
         Me.RB5_3.UseVisualStyleBackColor = True
         '
@@ -758,7 +730,6 @@ Partial Class frmEvaluation
         Me.RB5_2.Name = "RB5_2"
         Me.RB5_2.Size = New System.Drawing.Size(31, 17)
         Me.RB5_2.TabIndex = 2
-        Me.RB5_2.TabStop = True
         Me.RB5_2.Text = "2"
         Me.RB5_2.UseVisualStyleBackColor = True
         '
@@ -769,7 +740,6 @@ Partial Class frmEvaluation
         Me.RB5_1.Name = "RB5_1"
         Me.RB5_1.Size = New System.Drawing.Size(31, 17)
         Me.RB5_1.TabIndex = 1
-        Me.RB5_1.TabStop = True
         Me.RB5_1.Text = "1"
         Me.RB5_1.UseVisualStyleBackColor = True
         '

@@ -121,7 +121,7 @@ Public Class frmEmployee
         Dim EmployeeID As String
         EmployeeID = txtID.Text
         If EmployeeID <> "" Then
-            If IDInFile(EmployeeID) Then
+            If IDInFile(True) Then
                 Dim sr As StreamReader = File.OpenText("Employees.txt")
                 Dim sw As StreamWriter = File.CreateText("Temp.txt")
                 Dim Employee As String
@@ -157,7 +157,7 @@ Public Class frmEmployee
         dvgEmployee.Columns("ID").HeaderText = "Employee ID"
         dvgEmployee.Columns("FirstName").HeaderText = "First Name"
         dvgEmployee.Columns("LastName").HeaderText = "Last Name"
-        dvgEmployee.Columns("Middle").HeaderText = "Middle Name"
+        dvgEmployee.Columns("Middle").HeaderText = "Middle Initial"
         dvgEmployee.Columns("Address").HeaderText = "Address"
         dvgEmployee.Columns("AptRoom").HeaderText = "Apt / Room #"
         dvgEmployee.Columns("City").HeaderText = "City"
