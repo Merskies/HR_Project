@@ -110,7 +110,7 @@ Partial Class frmEmployee
         'lblMainPhone
         '
         Me.lblMainPhone.AutoSize = True
-        Me.lblMainPhone.Location = New System.Drawing.Point(63, 213)
+        Me.lblMainPhone.Location = New System.Drawing.Point(63, 216)
         Me.lblMainPhone.Name = "lblMainPhone"
         Me.lblMainPhone.Size = New System.Drawing.Size(67, 13)
         Me.lblMainPhone.TabIndex = 1
@@ -119,7 +119,7 @@ Partial Class frmEmployee
         'lblEmail
         '
         Me.lblEmail.AutoSize = True
-        Me.lblEmail.Location = New System.Drawing.Point(63, 247)
+        Me.lblEmail.Location = New System.Drawing.Point(63, 251)
         Me.lblEmail.Name = "lblEmail"
         Me.lblEmail.Size = New System.Drawing.Size(35, 13)
         Me.lblEmail.TabIndex = 1
@@ -243,7 +243,7 @@ Partial Class frmEmployee
         'lblAddress
         '
         Me.lblAddress.AutoSize = True
-        Me.lblAddress.Location = New System.Drawing.Point(63, 145)
+        Me.lblAddress.Location = New System.Drawing.Point(63, 147)
         Me.lblAddress.Name = "lblAddress"
         Me.lblAddress.Size = New System.Drawing.Size(48, 13)
         Me.lblAddress.TabIndex = 1
@@ -275,7 +275,7 @@ Partial Class frmEmployee
         'lblCity
         '
         Me.lblCity.AutoSize = True
-        Me.lblCity.Location = New System.Drawing.Point(63, 179)
+        Me.lblCity.Location = New System.Drawing.Point(63, 182)
         Me.lblCity.Name = "lblCity"
         Me.lblCity.Size = New System.Drawing.Size(27, 13)
         Me.lblCity.TabIndex = 1
@@ -284,7 +284,7 @@ Partial Class frmEmployee
         'lblState
         '
         Me.lblState.AutoSize = True
-        Me.lblState.Location = New System.Drawing.Point(299, 181)
+        Me.lblState.Location = New System.Drawing.Point(299, 180)
         Me.lblState.Name = "lblState"
         Me.lblState.Size = New System.Drawing.Size(35, 13)
         Me.lblState.TabIndex = 1
@@ -302,7 +302,7 @@ Partial Class frmEmployee
         'lblAltPhone
         '
         Me.lblAltPhone.AutoSize = True
-        Me.lblAltPhone.Location = New System.Drawing.Point(299, 213)
+        Me.lblAltPhone.Location = New System.Drawing.Point(299, 216)
         Me.lblAltPhone.Name = "lblAltPhone"
         Me.lblAltPhone.Size = New System.Drawing.Size(59, 13)
         Me.lblAltPhone.TabIndex = 1
@@ -310,7 +310,7 @@ Partial Class frmEmployee
         '
         'txtSSN
         '
-        Me.txtSSN.Location = New System.Drawing.Point(155, 283)
+        Me.txtSSN.Location = New System.Drawing.Point(155, 282)
         Me.txtSSN.Name = "txtSSN"
         Me.txtSSN.Size = New System.Drawing.Size(620, 20)
         Me.txtSSN.TabIndex = 12
@@ -318,7 +318,7 @@ Partial Class frmEmployee
         'lblSSN
         '
         Me.lblSSN.AutoSize = True
-        Me.lblSSN.Location = New System.Drawing.Point(63, 281)
+        Me.lblSSN.Location = New System.Drawing.Point(63, 286)
         Me.lblSSN.Name = "lblSSN"
         Me.lblSSN.Size = New System.Drawing.Size(86, 13)
         Me.lblSSN.TabIndex = 1
@@ -327,7 +327,7 @@ Partial Class frmEmployee
         'lblBirthday
         '
         Me.lblBirthday.AutoSize = True
-        Me.lblBirthday.Location = New System.Drawing.Point(63, 315)
+        Me.lblBirthday.Location = New System.Drawing.Point(63, 318)
         Me.lblBirthday.Name = "lblBirthday"
         Me.lblBirthday.Size = New System.Drawing.Size(57, 13)
         Me.lblBirthday.TabIndex = 1
@@ -501,7 +501,7 @@ Partial Class frmEmployee
         '
         'txtMainPhone
         '
-        Me.txtMainPhone.Location = New System.Drawing.Point(132, 213)
+        Me.txtMainPhone.Location = New System.Drawing.Point(134, 213)
         Me.txtMainPhone.Name = "txtMainPhone"
         Me.txtMainPhone.Size = New System.Drawing.Size(161, 20)
         Me.txtMainPhone.TabIndex = 9

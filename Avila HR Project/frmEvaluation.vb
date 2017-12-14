@@ -1,5 +1,14 @@
 ﻿Imports System.IO
 Public Class frmEvaluation
+    Structure EmployeeEvaluation 'Declare Structure
+        Dim Index As Integer
+        Dim ID As String
+        Dim FirstName As String
+        Dim LastName As String
+    End Structure
+
+    Public Employees() As EmployeeEvaluation 'Build Array Employee from the Structure
+
     Private Sub frmEvaluation_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         frmEmployee.Hide()
     End Sub
@@ -8,6 +17,7 @@ Public Class frmEvaluation
         frmEmployee.Show()
         Me.Hide()
     End Sub
+
     Private Sub ClearAllTextBoxes() Handles ClearBoxesToolStripMenuItem.Click
         Dim clear As Control
         For Each clear In Me.Controls
@@ -16,6 +26,7 @@ Public Class frmEvaluation
             End If
         Next
     End Sub
+
     Private Sub OpenFile() Handles OpenToolStripMenuItem.Click
         Dim Open As New OpenFileDialog
         Dim Response As String
@@ -33,7 +44,12 @@ Public Class frmEvaluation
             End If
         End If
     End Sub
+
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        End
+    End Sub
+
+    Private Sub frmEvaluation_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         End
     End Sub
 End Class

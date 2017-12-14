@@ -1,7 +1,7 @@
 ﻿Imports System.IO
 
 Public Class frmEmployee
-    Structure EmployeeInformation 'Declare Structure
+    Structure EmployeeInformation 'Declares Structure
         Dim Index As Integer
         Dim ID As String
         Dim FirstName As String
@@ -22,9 +22,9 @@ Public Class frmEmployee
         Dim DateRecorded As String
     End Structure
 
-    Public Employees() As EmployeeInformation 'Build Array Employee from the Structure
+    Public Employees() As EmployeeInformation 'Builds Array Employee from the Structure
 
-    Private Sub LoadInfo() Handles Me.Load
+    Private Sub LoadInfo() Handles Me.Load 'Loads the array with data from Employees.txt file
         Dim Line As String
         Dim Data(16) As String
         Dim Individual() As String = IO.File.ReadAllLines("Employees.txt")
@@ -54,21 +54,22 @@ Public Class frmEmployee
     End Sub
 
     Private Sub SwitchForm(sender As Object, e As EventArgs) Handles btnSwitch.Click, SwitchFormToolStripMenuItem.Click
-        frmEvaluation.Show()
+        frmEvaluation.Show() 'Shows the other form and hide the current form.
         Me.Hide()
     End Sub
 
-    Private Sub ClearAllTextBoxes() Handles btnClear.Click, ClearBoxesToolStripMenuItem.Click
+    Private Sub ClearAllTextBoxes() Handles btnClear.Click, ClearBoxesToolStripMenuItem.Click 'Clears all textboxes
         Dim clear As Control
         For Each clear In Me.Controls
             If TypeOf clear Is TextBox Then
                 clear.Text = Nothing
             End If
         Next
+        BtnSaveEmployee.Enabled = False
     End Sub
 
-    Private Sub BtnNewEmployee_Click(sender As Object, e As EventArgs) Handles BtnNewEmployee.Click, NewEmployeeToolStripMenuItem.Click
-        'This Code Assigns an ID for the new employee and assigns the date they were added.
+    Private Sub NewEmployee() Handles BtnNewEmployee.Click, NewEmployeeToolStripMenuItem.Click
+        'Assigns an ID for the new employee and assigns the date they were added.
         Dim lineCount = File.ReadAllLines("Employees.txt").Length
         Dim EmployeeID As String
         EmployeeID = lineCount + 1
@@ -79,8 +80,8 @@ Public Class frmEmployee
         BtnUpdate.Enabled = False
     End Sub
 
-    Private Sub BtnSaveEmployee_Click(sender As Object, e As EventArgs) Handles BtnSaveEmployee.Click, SaveToolStripMenuItem.Click
-        'This code saves what is currently displayed on the textboxes to the array. It will not save unless all the boxes are filled in and will let the user know that.
+    Private Sub SaveEmployee() Handles BtnSaveEmployee.Click, SaveToolStripMenuItem.Click
+        'Saves what is currently displayed on the textboxes to the array. It will not save unless all the boxes are filled in and will let the user know that.
         Dim ID, LastN, FirstN, MiddleN, StreetAd, Apt, City, State, Zip, MainPhone, AltPhone, Email, SSN, Birth, Martial, Gender, DateRecorded, Info As String
         ID = txtID.Text
         FirstN = txtFirstName.Text
@@ -101,8 +102,8 @@ Public Class frmEmployee
         DateRecorded = txtDateRecorded.Text
 
         Info = ID & ", " & FirstN & ", " & LastN & ", " & MiddleN & ", " & StreetAd & ", " & Apt & ", " & City & ", " & State & ", " & Zip & ", " & MainPhone & ", " & AltPhone & ", " & Email & ", " & SSN & ", " & Birth & ", " & Martial & ", " & Gender & ", " & DateRecorded
-
-        Dim emptyTextBoxes =
+        'Concatenates all the variables into Info
+        Dim emptyTextBoxes = 'Checks for empty text boxes
             From txt In Me.Controls.OfType(Of TextBox)()
             Where txt.Text.Length = 0
             Select txt.Name
@@ -119,47 +120,46 @@ Public Class frmEmployee
         End If
     End Sub
 
-    Private Sub BtnUpdate_Click(sender As Object, e As EventArgs) Handles BtnUpdate.Click
+    Private Sub UpdateInfo() Handles BtnUpdate.Click, UpdateToolStripMenuItem.Click 'Appends the file
         Dim EmployeeID, Name As String
         EmployeeID = txtID.Text
         Name = txtFirstName.Text & " " & txtLastName.Text
-        Dim updated_data As String = ""
-        For Each em In Employees
-            If EmployeeID = em.ID Then
-                'ID = txtID.Text
-                em.FirstName = txtFirstName.Text
-                em.LastName = txtLastName.Text
-                em.MiddleInitial = txtMiddle.Text
-                em.Address = txtAddress.Text
-                em.AptRoom = txtAptRoom.Text
-                em.City = txtCity.Text
-                em.State = txtState.Text
-                em.ZipCode = txtZipCode.Text
-                em.MainPhone = txtMainPhone.Text
-                em.AlternatePhone = txtAltPhone.Text
-                em.Email = txtEmail.Text
-                em.SSN = txtSSN.Text
-                em.Birthday = txtBirthday.Text
-                em.MaritalStatus = txtMaritalStatus.Text
-                em.Gender = txtGender.Text
-                em.DateRecorded = txtDateRecorded.Text
+        Dim UpdatedData As String = ""
+        For Each EM In Employees
+            If EmployeeID = EM.ID Then
+                EM.FirstName = txtFirstName.Text
+                EM.LastName = txtLastName.Text
+                EM.MiddleInitial = txtMiddle.Text
+                EM.Address = txtAddress.Text
+                EM.AptRoom = txtAptRoom.Text
+                EM.City = txtCity.Text
+                EM.State = txtState.Text
+                EM.ZipCode = txtZipCode.Text
+                EM.MainPhone = txtMainPhone.Text
+                EM.AlternatePhone = txtAltPhone.Text
+                EM.Email = txtEmail.Text
+                EM.SSN = txtSSN.Text
+                EM.Birthday = txtBirthday.Text
+                EM.MaritalStatus = txtMaritalStatus.Text
+                EM.Gender = txtGender.Text
+                EM.DateRecorded = txtDateRecorded.Text
             End If
-            With em
-                updated_data &= $"{ .ID},{ .FirstName},{ .LastName},{ .MiddleInitial},{ .Address},{ .AptRoom},{ .City},{ .State},{ .ZipCode},{ .MainPhone},{ .AlternatePhone},{ .Email},{ .SSN},{ .Birthday},{ .MaritalStatus},{ .Gender},{ .DateRecorded}" & vbCrLf
+            With EM
+                UpdatedData &= $"{ .ID},{ .FirstName},{ .LastName},{ .MiddleInitial},{ .Address},{ .AptRoom},{ .City},{ .State},{ .ZipCode},{ .MainPhone},{ .AlternatePhone},{ .Email},{ .SSN},{ .Birthday},{ .MaritalStatus},{ .Gender},{ .DateRecorded}" & vbCrLf
             End With
         Next
-        File.WriteAllText("Employees.txt", updated_data)
+        File.WriteAllText("Employees.txt", UpdatedData)
         MessageBox.Show(Name & " Updated.", "Employee Updated")
         ClearAllTextBoxes()
         txtFirstName.Focus()
     End Sub
 
-    Private Sub BtnDisplay_Click(sender As Object, e As EventArgs) Handles BtnDisplay.Click, DisplayToolStripMenuItem.Click
+    Private Sub DisplayEmployees() Handles BtnDisplay.Click, DisplayToolStripMenuItem.Click
         'This code is adding values to the structure.
         LoadInfo()
-        Dim NameQuery = From Name In Employees
-                        Order By Name.ID Ascending
-                        Select Name.ID, Name.FirstName, Name.LastName, Name.MiddleInitial, Name.Address, Name.AptRoom, Name.City, Name.State, Name.ZipCode, Name.MainPhone, Name.AlternatePhone, Name.Email, Name.SSN, Name.Birthday, Name.MaritalStatus, Name.Gender, Name.DateRecorded
+        Dim NameQuery = From Employee In Employees
+                        Order By Employee.ID Ascending
+                        Select Employee.ID, Employee.FirstName, Employee.LastName, Employee.MiddleInitial, Employee.Address, Employee.AptRoom, Employee.City, Employee.State, Employee.ZipCode, Employee.MainPhone, Employee.AlternatePhone, Employee.Email, Employee.SSN, Employee.Birthday, Employee.MaritalStatus, Employee.Gender, Employee.DateRecorded
         dvgEmployee.DataSource = NameQuery.ToList
         dvgEmployee.CurrentCell = Nothing
         dvgEmployee.Columns("ID").HeaderText = "Employee ID"
@@ -182,15 +182,15 @@ Public Class frmEmployee
         dvgEmployee.RowHeadersVisible = False
     End Sub
 
-    Private Sub BtnSearch_Click(sender As Object, e As EventArgs) Handles BtnSearch.Click
+    Private Sub SearchID() Handles BtnSearch.Click, SearchToolStripMenuItem.Click
         LoadInfo()
-        Dim IDN As String
-        IDN = InputBox("Please enter the employee's ID number to search", "ID Search")
-        Dim IDQuery = From Name In Employees
-                      Order By Name.ID Ascending
-                      Let NameID = Name.ID
-                      Where NameID = IDN
-                      Select Name.ID, Name.FirstName, Name.LastName, Name.MiddleInitial, Name.Address, Name.AptRoom, Name.City, Name.State, Name.ZipCode, Name.MainPhone, Name.AlternatePhone, Name.Email, Name.SSN, Name.Birthday, Name.MaritalStatus, Name.Gender, Name.DateRecorded
+        Dim IDNumber As String
+        IDNumber = InputBox("Please enter the employee's ID number to search", "ID Search")
+        Dim IDQuery = From Employee In Employees
+                      Order By Employee.ID Ascending
+                      Let NameID = Employee.ID
+                      Where NameID = IDNumber
+                      Select Employee.ID, Employee.FirstName, Employee.LastName, Employee.MiddleInitial, Employee.Address, Employee.AptRoom, Employee.City, Employee.State, Employee.ZipCode, Employee.MainPhone, Employee.AlternatePhone, Employee.Email, Employee.SSN, Employee.Birthday, Employee.MaritalStatus, Employee.Gender, Employee.DateRecorded
         If (IDQuery.Count <> 0) Then
             Dim DBEmployee = IDQuery.First
             txtID.Text = DBEmployee.ID
@@ -211,7 +211,6 @@ Public Class frmEmployee
             txtGender.Text = DBEmployee.Gender
             txtDateRecorded.Text = DBEmployee.DateRecorded
 
-            ' Enable/Disable Save/Update
             BtnSaveEmployee.Enabled = False
             BtnUpdate.Enabled = True
             Return
@@ -220,16 +219,16 @@ Public Class frmEmployee
         End If
     End Sub
 
-    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+    Private Sub CloseApp() Handles ExitToolStripMenuItem.Click 'close the application
         End
     End Sub
 
-    Private Sub OpenFile() Handles OpenToolStripMenuItem.Click
+    Private Sub OpenFile() Handles OpenToolStripMenuItem.Click 'Code for open option on menustrip
         Dim Open As New OpenFileDialog
         Dim Response As String
         Dim FileName
         Open.ShowDialog()
-        open.Filter = "All Files(*.*)|*.*"
+        Open.Filter = "All Files(*.*)|*.*"
         FileName = Open.FileName
         If File.Exists(FileName) Then
             MsgBox("You have selected: " & FileName, MsgBoxStyle.Information)
@@ -242,12 +241,7 @@ Public Class frmEmployee
         End If
     End Sub
 
-    ''' <summary>
-    ''' Checks whether given ID is in the Employees.txt.
-    ''' </summary>
-    ''' <param name="ID"></param>
-    ''' <returns></returns>
-    Function IDInFile(ID As String) As Boolean
+    Function IDInFile(ID As String) As Boolean 'Checks whether given ID is in the Employees.txt
         If File.Exists("Employees.txt") Then
             Dim sr As StreamReader = File.OpenText("Employees.txt")
             Dim IDCheck As String
